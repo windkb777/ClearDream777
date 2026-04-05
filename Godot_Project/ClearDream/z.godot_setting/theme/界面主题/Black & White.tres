@@ -1,0 +1,60 @@
+[gd_resource type="Theme" format=3 uid="uid://cdopac3kin1bw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_miqca"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(0.7666196, 0.76661956, 0.76661956, 1)
+border_color = Color(0, 0.9, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjjp2"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(0, 0.9, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p16yt"]
+bg_color = Color(0.8, 0.8, 0.8, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enupr"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mn188"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/styles/hover = SubResource("StyleBoxFlat_miqca")
+Button/styles/normal = SubResource("StyleBoxFlat_hjjp2")
+CheckButton/styles/normal = SubResource("StyleBoxFlat_hjjp2")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/styles/normal = SubResource("StyleBoxFlat_hjjp2")
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/styles/normal = SubResource("StyleBoxFlat_hjjp2")
+OptionButton/colors/font_color = Color(0, 0, 0, 1)
+OptionButton/styles/hover = SubResource("StyleBoxFlat_p16yt")
+PopupMenu/colors/font_color = Color(0.4045111, 0.40451115, 0.4045111, 1)
+PopupMenu/colors/font_hover_color = Color(0, 0.7019608, 0.5764706, 1)
+PopupMenu/styles/hover = SubResource("StyleBoxFlat_enupr")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_mn188")

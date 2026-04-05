@@ -1,0 +1,3429 @@
+[gd_scene format=3 uid="uid://b8i7i4rmq3gg7"]
+
+[ext_resource type="PackedScene" uid="uid://xkjpck05rviu" path="res://Engine/-inside-/Panel.tscn" id="1_53cjo"]
+[ext_resource type="Theme" uid="uid://ddshqy6axfm5t" path="res://z.godot_setting/theme/界面主题/Side_Button.tres" id="2_1tyk4"]
+[ext_resource type="Script" uid="uid://dhpfo2cg8pv2r" path="res://Engine/GDsctipt/E.AI_Thinks.gd" id="2_c636m"]
+[ext_resource type="Theme" uid="uid://cdopac3kin1bw" path="res://z.godot_setting/theme/界面主题/Black & White.tres" id="2_qx8nn"]
+[ext_resource type="Theme" uid="uid://d3jf6452fsogo" path="res://z.godot_setting/theme/界面主题/Title Tag 1.tres" id="2_rhuu3"]
+[ext_resource type="Theme" uid="uid://c7u4fnqyc5swt" path="res://z.godot_setting/theme/界面主题/BG Pad.tres" id="3_o3nh6"]
+[ext_resource type="Theme" uid="uid://6dr2fj7u6v2h" path="res://z.godot_setting/theme/界面主题/Title Tag 2A.tres" id="4_d4iwv"]
+[ext_resource type="Theme" uid="uid://pgpkgyvh7v2a" path="res://z.godot_setting/theme/界面主题/Title Tag 2.tres" id="4_x1035"]
+[ext_resource type="Theme" uid="uid://dkj12hcdjw0xc" path="res://z.godot_setting/theme/界面主题/Slot Color A.tres" id="5_hsgvb"]
+[ext_resource type="Theme" uid="uid://vro5vm5iks4e" path="res://z.godot_setting/theme/界面主题/Button Slot 2.tres" id="9_1gx4o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yy0d3"]
+bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7oy73"]
+bg_color = Color(0.26666668, 0, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pscq6"]
+bg_color = Color(0.68158036, 0.0028547312, 0.9315977, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3yfk"]
+bg_color = Color(0.26666668, 0, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_l4m2l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjjp2"]
+bg_color = Color(0.23921569, 1, 0.43137255, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qre6j"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2v1oj"]
+bg_color = Color(0, 0.7019608, 0.5764706, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62sbf"]
+bg_color = Color(0.26, 0.26, 0.26, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o3nh6"]
+bg_color = Color(0.268805, 0.62797797, 0.9078881, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c636m"]
+bg_color = Color(1, 0.09803922, 0.24705882, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kq8x"]
+bg_color = Color(0.08200002, 0.82, 0.32800013, 1)
+corner_radius_top_left = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="SystemFont" id="SystemFont_53cjo"]
+font_names = PackedStringArray("Microsoft YaHei", "Microsoft YaHei UI", "Segoe UI")
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_huopk"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(0, 0.69640756, 0.8351377, 1)
+border_color = Color(0, 0.9, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4iwv"]
+bg_color = Color(0, 0.7019608, 0.5764706, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dewsq"]
+bg_color = Color(0, 0.7019608, 0.5764706, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhuu3"]
+content_margin_top = 6.0
+bg_color = Color(0.5822391, 0.0011191362, 0.7202741, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1035"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 9
+corner_radius_top_right = 9
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 9
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hsgvb"]
+bg_color = Color(0.15686275, 0.15686275, 0.15686275, 1)
+border_width_left = 8
+border_color = Color(0, 0.9, 0, 1)
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1tyk4"]
+bg_color = Color(0.45064825, 0.4506483, 0.45064813, 1)
+corner_radius_top_left = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1gx4o"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(0.15686275, 0.15686275, 0.15686275, 1)
+border_color = Color(0, 0.9, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ijxgm"]
+content_margin_left = 12.0
+content_margin_right = 12.0
+bg_color = Color(0.24840033, 0.24840012, 0.24840012, 1)
+border_color = Color(0, 0.9, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c636m"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_qx8nn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l4m2l"]
+bg_color = Color(0.71859497, 0.3026619, 0.22122377, 1)
+corner_radius_top_left = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_53cjo"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_c636m"]
+
+[node name="AI_Core" type="Control" unique_id=406316229]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1500.0
+offset_bottom = 1100.0
+script = ExtResource("2_c636m")
+
+[node name="Board" parent="." unique_id=1530729812 instance=ExtResource("1_53cjo")]
+layout_mode = 0
+Title = "AI Core"
+Vers = "Direct By The Dreamer  26/2/26"
+WindowSize = Vector2(1500, 1100)
+Info = false
+UI = false
+Code = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Board" unique_id=414146550]
+layout_mode = 0
+offset_left = 1161.0
+offset_top = 3.0
+offset_right = 1361.0
+offset_bottom = 45.0
+
+[node name="Code" type="Button" parent="Board/HBoxContainer" unique_id=5615310]
+z_index = 1
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_yy0d3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7oy73")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pscq6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_c3yfk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_yy0d3")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l4m2l")
+text = "小队"
+
+[node name="Code2" type="Button" parent="Board/HBoxContainer" unique_id=1163589676]
+z_index = 1
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_yy0d3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7oy73")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pscq6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_c3yfk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_yy0d3")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l4m2l")
+text = "命令"
+
+[node name="Code3" type="Button" parent="Board/HBoxContainer" unique_id=247702507]
+z_index = 1
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_hjjp2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hjjp2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hjjp2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_hjjp2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_hjjp2")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_l4m2l")
+text = "配置"
+
+[node name="Tech Lv" type="Button" parent="Board" unique_id=1036039125]
+layout_mode = 0
+offset_left = 1450.0
+offset_top = 176.0
+offset_right = 1497.5
+offset_bottom = 266.0
+theme = ExtResource("2_1tyk4")
+text = "当前
+科技
+6级"
+alignment = 2
+
+[node name="Tech Lv2" type="Button" parent="Board" unique_id=639419033]
+layout_mode = 0
+offset_left = 1450.0
+offset_top = 80.0
+offset_right = 1497.5
+offset_bottom = 160.0
+theme = ExtResource("2_1tyk4")
+text = "简单
+电脑"
+alignment = 2
+
+[node name="0_Setting" type="Panel" parent="." unique_id=813509598]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 229.0
+offset_bottom = 450.0
+theme = ExtResource("3_o3nh6")
+metadata/_edit_group_ = true
+
+[node name="Margin" type="MarginContainer" parent="0_Setting" unique_id=1159900830]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Flow" type="FlowContainer" parent="0_Setting/Margin" unique_id=182664617]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="contrast3" type="Button" parent="0_Setting/Margin/Flow" unique_id=962050683]
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_qre6j")
+text = "AI建造设置"
+
+[node name="contrast5" type="Button" parent="0_Setting/Margin/Flow" unique_id=980548667]
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_qre6j")
+text = "IQ智力"
+
+[node name="contrast4" type="Button" parent="0_Setting/Margin/Flow" unique_id=690871105]
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_qre6j")
+text = "概率调整"
+
+[node name="contrast6" type="Button" parent="0_Setting/Margin/Flow" unique_id=2060789349]
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_qre6j")
+text = "查看列表"
+
+[node name="1_Teams" type="Panel" parent="." unique_id=971642882]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 64.0
+offset_right = 451.0
+offset_bottom = 450.0
+theme = ExtResource("3_o3nh6")
+
+[node name="title" type="Label" parent="1_Teams" unique_id=1909187958]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 5.0
+offset_right = 186.0
+offset_bottom = 33.0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "- 部队列表 -"
+horizontal_alignment = 1
+
+[node name="add" type="Button" parent="1_Teams" unique_id=1475345123]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 336.0
+offset_right = 186.0
+offset_bottom = 366.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+theme = ExtResource("2_qx8nn")
+text = "+"
+
+[node name="v" type="ScrollContainer" parent="1_Teams" unique_id=2049977823]
+custom_minimum_size = Vector2(0, 290)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 36.0
+offset_right = 186.0
+offset_bottom = 326.0
+size_flags_vertical = 3
+
+[node name="list" type="VBoxContainer" parent="1_Teams/v" unique_id=2097577667]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="team1" type="Button" parent="1_Teams/v/list" unique_id=681244914]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队1"
+
+[node name="team2" type="Button" parent="1_Teams/v/list" unique_id=727158599]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队2"
+
+[node name="team3" type="Button" parent="1_Teams/v/list" unique_id=945296239]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队3"
+
+[node name="team4" type="Button" parent="1_Teams/v/list" unique_id=642632976]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队4"
+
+[node name="team5" type="Button" parent="1_Teams/v/list" unique_id=362057151]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队5"
+
+[node name="team6" type="Button" parent="1_Teams/v/list" unique_id=1493517053]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队6"
+
+[node name="team7" type="Button" parent="1_Teams/v/list" unique_id=620989496]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队7"
+
+[node name="team8" type="Button" parent="1_Teams/v/list" unique_id=198654537]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队8"
+
+[node name="team9" type="Button" parent="1_Teams/v/list" unique_id=126076790]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队9"
+
+[node name="team10" type="Button" parent="1_Teams/v/list" unique_id=447548178]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队10"
+
+[node name="team11" type="Button" parent="1_Teams/v/list" unique_id=216884566]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队11"
+
+[node name="team12" type="Button" parent="1_Teams/v/list" unique_id=370667984]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队12"
+
+[node name="team13" type="Button" parent="1_Teams/v/list" unique_id=2116469962]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队13"
+
+[node name="team14" type="Button" parent="1_Teams/v/list" unique_id=848767704]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team15" type="Button" parent="1_Teams/v/list" unique_id=77296015]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team16" type="Button" parent="1_Teams/v/list" unique_id=1423665637]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team17" type="Button" parent="1_Teams/v/list" unique_id=1461740302]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team18" type="Button" parent="1_Teams/v/list" unique_id=477459097]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team19" type="Button" parent="1_Teams/v/list" unique_id=1960195065]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team20" type="Button" parent="1_Teams/v/list" unique_id=1751789975]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team21" type="Button" parent="1_Teams/v/list" unique_id=1005770474]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team22" type="Button" parent="1_Teams/v/list" unique_id=1488434992]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="team23" type="Button" parent="1_Teams/v/list" unique_id=1559164437]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "小队14"
+
+[node name="2_Targets" type="Panel" parent="." unique_id=1805765066]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 64.0
+offset_right = 673.0
+offset_bottom = 450.0
+theme = ExtResource("3_o3nh6")
+
+[node name="title" type="Label" parent="2_Targets" unique_id=93065919]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 5.0
+offset_right = 186.0
+offset_bottom = 33.0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "- 任务目标列表 -"
+horizontal_alignment = 1
+
+[node name="add" type="Button" parent="2_Targets" unique_id=1256042567]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 336.0
+offset_right = 186.0
+offset_bottom = 366.0
+size_flags_vertical = 10
+theme = ExtResource("2_qx8nn")
+text = "+"
+
+[node name="v" type="ScrollContainer" parent="2_Targets" unique_id=728240093]
+custom_minimum_size = Vector2(0, 290)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 33.0
+offset_right = 186.0
+offset_bottom = 326.0
+size_flags_vertical = 3
+
+[node name="list" type="VBoxContainer" parent="2_Targets/v" unique_id=1753781510]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="target1" type="Button" parent="2_Targets/v/list" unique_id=113316764]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "运载攻击A1"
+
+[node name="target2" type="Button" parent="2_Targets/v/list" unique_id=126205714]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "运载攻击A2"
+
+[node name="target3" type="Button" parent="2_Targets/v/list" unique_id=786298343]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "运载攻击A3"
+
+[node name="target4" type="Button" parent="2_Targets/v/list" unique_id=1572991796]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "攻击B1"
+
+[node name="target5" type="Button" parent="2_Targets/v/list" unique_id=91752921]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "攻击D1"
+
+[node name="target6" type="Button" parent="2_Targets/v/list" unique_id=1015905404]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "攻击D2"
+
+[node name="target7" type="Button" parent="2_Targets/v/list" unique_id=2140609239]
+custom_minimum_size = Vector2(140, 30)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("9_1gx4o")
+text = "攻击D3"
+
+[node name="3_Trigger" type="Control" parent="." unique_id=1541910818]
+anchors_preset = 0
+offset_left = 690.0
+offset_top = 64.0
+offset_right = 690.0
+offset_bottom = 64.0
+
+[node name="Panel" type="Panel" parent="3_Trigger" unique_id=937336976]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 746.0
+offset_bottom = 386.0
+theme = ExtResource("3_o3nh6")
+
+[node name="add" type="Button" parent="3_Trigger" unique_id=1060097492]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 0
+offset_left = 193.0
+offset_top = 336.0
+offset_right = 553.0
+offset_bottom = 366.0
+size_flags_vertical = 10
+theme = ExtResource("2_qx8nn")
+text = "+"
+
+[node name="tag" type="Label" parent="3_Trigger" unique_id=815196744]
+layout_mode = 0
+offset_left = 577.0
+offset_right = 709.0
+offset_bottom = 36.0
+theme = ExtResource("2_rhuu3")
+text = "触发设定"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="title" type="Label" parent="3_Trigger" unique_id=757347534]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 730.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "    ID                    触发前提                         触发类型              应用国家                         	应用队伍                   "
+vertical_alignment = 1
+
+[node name="v" type="ScrollContainer" parent="3_Trigger" unique_id=354798802]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 74.0
+offset_right = 731.0
+offset_bottom = 326.0
+size_flags_vertical = 3
+
+[node name="list" type="VBoxContainer" parent="3_Trigger/v" unique_id=998885123]
+custom_minimum_size = Vector2(715, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="trigger1" type="HBoxContainer" parent="3_Trigger/v/list" unique_id=1747531617]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="contrast3" type="Button" parent="3_Trigger/v/list/trigger1" unique_id=856716210]
+custom_minimum_size = Vector2(45, 35)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "1"
+
+[node name="contrast4" type="Button" parent="3_Trigger/v/list/trigger1" unique_id=1155619484]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "敌方的 超时空装置 = 1"
+
+[node name="contrast2" type="Button" parent="3_Trigger/v/list/trigger1" unique_id=1323698314]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "进攻设施"
+
+[node name="contrast5" type="Button" parent="3_Trigger/v/list/trigger1" unique_id=1207732291]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "<所有>"
+
+[node name="contrast6" type="Button" parent="3_Trigger/v/list/trigger1" unique_id=1213829361]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2v1oj")
+text = "Smart1-G"
+
+[node name="contrast7" type="Button" parent="3_Trigger/v/list/trigger1" unique_id=1549788935]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2v1oj")
+text = "Smart2-G"
+
+[node name="trigger2" type="HBoxContainer" parent="3_Trigger/v/list" unique_id=1668007998]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="contrast3" type="Button" parent="3_Trigger/v/list/trigger2" unique_id=1571307579]
+custom_minimum_size = Vector2(45, 35)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "2"
+
+[node name="contrast4" type="Button" parent="3_Trigger/v/list/trigger2" unique_id=226003160]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "敌方的 天启坦克 ≥ 6"
+
+[node name="contrast2" type="Button" parent="3_Trigger/v/list/trigger2" unique_id=461453456]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "攻击单位"
+
+[node name="contrast5" type="Button" parent="3_Trigger/v/list/trigger2" unique_id=1525759830]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "- 伊拉克 -"
+
+[node name="contrast6" type="Button" parent="3_Trigger/v/list/trigger2" unique_id=1755286321]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2v1oj")
+text = "EraseTK1-G"
+
+[node name="contrast7" type="Button" parent="3_Trigger/v/list/trigger2" unique_id=1232446753]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_62sbf")
+text = "<none>"
+
+[node name="trigger3" type="HBoxContainer" parent="3_Trigger/v/list" unique_id=1252634627]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="contrast3" type="Button" parent="3_Trigger/v/list/trigger3" unique_id=215129399]
+custom_minimum_size = Vector2(45, 35)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "3"
+
+[node name="contrast4" type="Button" parent="3_Trigger/v/list/trigger3" unique_id=122664468]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "己方的 犀牛坦克 ＜ 4"
+
+[node name="contrast2" type="Button" parent="3_Trigger/v/list/trigger3" unique_id=114909911]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "生产建造"
+
+[node name="contrast5" type="Button" parent="3_Trigger/v/list/trigger3" unique_id=277694874]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "<所有>"
+
+[node name="contrast6" type="Button" parent="3_Trigger/v/list/trigger3" unique_id=1749567092]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2v1oj")
+text = "BulidTK1-G"
+
+[node name="contrast7" type="Button" parent="3_Trigger/v/list/trigger3" unique_id=733884344]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2v1oj")
+text = "ATKUN-G"
+
+[node name="trigger4" type="HBoxContainer" parent="3_Trigger/v/list" unique_id=179267770]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="contrast3" type="Button" parent="3_Trigger/v/list/trigger4" unique_id=1719424820]
+custom_minimum_size = Vector2(45, 35)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "4"
+
+[node name="contrast4" type="Button" parent="3_Trigger/v/list/trigger4" unique_id=1799296533]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "己方的 实验室 = 1"
+
+[node name="contrast2" type="Button" parent="3_Trigger/v/list/trigger4" unique_id=24440671]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "防御"
+
+[node name="contrast5" type="Button" parent="3_Trigger/v/list/trigger4" unique_id=736148363]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "<所有>"
+
+[node name="contrast6" type="Button" parent="3_Trigger/v/list/trigger4" unique_id=836953012]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2v1oj")
+text = "AMMO1C-G"
+
+[node name="contrast8" type="Button" parent="3_Trigger/v/list/trigger4" unique_id=193221185]
+custom_minimum_size = Vector2(90, 35)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_62sbf")
+text = "<none>"
+
+[node name="4_View" type="Control" parent="." unique_id=219253597]
+anchors_preset = 0
+offset_left = 64.0
+offset_top = 470.0
+offset_right = 64.0
+offset_bottom = 470.0
+
+[node name="title" type="Label" parent="4_View" unique_id=461576813]
+layout_mode = 0
+offset_right = 299.0
+offset_bottom = 46.0
+theme = ExtResource("2_rhuu3")
+text = "小队预览"
+horizontal_alignment = 1
+
+[node name="viewer" type="Panel" parent="4_View" unique_id=221894093]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 299.0
+offset_bottom = 296.0
+theme = ExtResource("3_o3nh6")
+
+[node name="line" type="Line2D" parent="4_View" unique_id=1489015127]
+position = Vector2(-59.597973, -591)
+scale = Vector2(1.0101352, 1)
+points = PackedVector2Array(70, 875, 343, 875, 343, 638, 70, 638)
+closed = true
+width = 2.0
+default_color = Color(0.11858138, 0.11858138, 0.11858138, 1)
+
+[node name="5_Task" type="Control" parent="." unique_id=241833651]
+anchors_preset = 0
+offset_left = 411.0
+offset_top = 484.0
+offset_right = 411.0
+offset_bottom = 484.0
+
+[node name="Script_Pad" type="Polygon2D" parent="5_Task" unique_id=1935080662]
+position = Vector2(-412, -489)
+color = Color(0, 0.4, 0.2666667, 1)
+polygon = PackedVector2Array(416, 475, 714, 475, 748, 513, 879, 513, 904, 544, 946, 544, 952, 537, 956, 537, 956, 558, 952, 558, 946, 551, 904, 551, 887, 562, 887, 947, 874, 961, 414, 961, 401, 947, 401, 491, 406, 481)
+
+[node name="bg" type="Panel" parent="5_Task" unique_id=82202192]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 463.0
+offset_bottom = 461.0
+theme = ExtResource("3_o3nh6")
+
+[node name="id" type="Button" parent="5_Task" unique_id=1199102355]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 7.0
+offset_right = 305.0
+offset_bottom = 38.0
+theme = ExtResource("4_d4iwv")
+text = "运载攻击A1"
+
+[node name="tag" type="Label" parent="5_Task" unique_id=1780082494]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 138.0
+offset_bottom = 36.0
+theme = ExtResource("2_rhuu3")
+text = "命令步骤"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="title2" type="Label" parent="5_Task" unique_id=2019454954]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 46.0
+offset_right = 440.0
+offset_bottom = 72.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = " 顺序                  任务                                  目标                  操作"
+vertical_alignment = 1
+
+[node name="sel" type="Panel" parent="5_Task" unique_id=2103143733]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 141.0
+offset_right = 447.0
+offset_bottom = 169.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_o3nh6")
+
+[node name="add" type="Button" parent="5_Task" unique_id=246253330]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 0
+offset_left = 16.0
+offset_top = 419.0
+offset_right = 447.0
+offset_bottom = 449.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+theme = ExtResource("2_qx8nn")
+text = "+"
+
+[node name="v" type="ScrollContainer" parent="5_Task" unique_id=127335898]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.5
+offset_top = 82.0
+offset_right = 446.5
+offset_bottom = 412.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="list" type="VBoxContainer" parent="5_Task/v" unique_id=1315774196]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="task1" type="HBoxContainer" parent="5_Task/v/list" unique_id=892400489]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task1" unique_id=1970484493]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task1" unique_id=1988019442]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "移动至指定建筑"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task1" unique_id=970101392]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "部队兵营"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task1" unique_id=1948959902]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task2" type="HBoxContainer" parent="5_Task/v/list" unique_id=1527931573]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task2" unique_id=1256884276]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task2" unique_id=1911876935]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "使用运输工具"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task2" unique_id=1107293456]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "乘车"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task2" unique_id=694564478]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task3" type="HBoxContainer" parent="5_Task/v/list" unique_id=1989647205]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task3" unique_id=1974909602]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task3" unique_id=41089116]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "等待载具乘载"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task3" unique_id=1356616912]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "完全上车"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task3" unique_id=1467334957]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task4" type="HBoxContainer" parent="5_Task/v/list" unique_id=474831358]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task4" unique_id=548800763]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task4" unique_id=371251005]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "移动至建筑附近"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task4" unique_id=1553417612]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "敌方xx建筑"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task4" unique_id=1553731955]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task5" type="HBoxContainer" parent="5_Task/v/list" unique_id=1362328949]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task5" unique_id=549330245]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task5" unique_id=288288129]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "载具乘降"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task5" unique_id=1409428719]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "下车"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task5" unique_id=1361516976]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task6" type="HBoxContainer" parent="5_Task/v/list" unique_id=2101091538]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task6" unique_id=1223846146]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task6" unique_id=242122377]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "任务执行完成"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task6" unique_id=588123153]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "/"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task6" unique_id=902416399]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task7" type="HBoxContainer" parent="5_Task/v/list" unique_id=1055813062]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task7" unique_id=356161870]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task7" unique_id=1046369273]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "攻击指定建筑"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task7" unique_id=1461259206]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "发电厂"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task7" unique_id=1680779273]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task8" type="HBoxContainer" parent="5_Task/v/list" unique_id=525392565]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task8" unique_id=1825097361]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task8" unique_id=1444183234]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "攻击"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task8" unique_id=246307549]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "工厂类型"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task8" unique_id=1941001198]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task9" type="HBoxContainer" parent="5_Task/v/list" unique_id=1710742738]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task9" unique_id=2031822871]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task9" unique_id=33831824]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "攻击"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task9" unique_id=1855753075]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "建筑物"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task9" unique_id=1995712266]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="task10" type="HBoxContainer" parent="5_Task/v/list" unique_id=544359961]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="5_Task/v/list/task10" unique_id=974781505]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "9"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="5_Task/v/list/task10" unique_id=1253006469]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "攻击"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="5_Task/v/list/task10" unique_id=565739926]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "任何目标"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="5_Task/v/list/task10" unique_id=1036992793]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DetailA" type="Control" parent="." unique_id=1499829420]
+anchors_preset = 0
+offset_left = 956.0
+offset_top = 470.0
+offset_right = 956.0
+offset_bottom = 470.0
+
+[node name="bg" type="Panel" parent="DetailA" unique_id=934445762]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 460.0
+offset_bottom = 286.0
+theme = ExtResource("3_o3nh6")
+
+[node name="tag" type="Label" parent="DetailA" unique_id=1240541373]
+layout_mode = 0
+offset_left = 316.0
+offset_right = 448.0
+offset_bottom = 36.0
+theme = ExtResource("2_rhuu3")
+text = "行为逻辑"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="label2" type="Label" parent="DetailA" unique_id=504170340]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 55.0
+offset_right = 121.0
+offset_bottom = 90.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_8kq8x")
+text = "任务命令"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="label" type="Label" parent="DetailA" unique_id=1187092337]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 94.0
+offset_right = 121.0
+offset_bottom = 129.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_8kq8x")
+text = "使用部队"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="id" type="Button" parent="DetailA" unique_id=574354966]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 5.0
+offset_right = 156.0
+offset_bottom = 36.0
+theme = ExtResource("4_x1035")
+text = "Smart1-G"
+
+[node name="v" type="Control" parent="DetailA" unique_id=2050408030]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="logic1" type="Button" parent="DetailA/v" unique_id=103061539]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 141.0
+offset_right = 121.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "需求队伍
+5只"
+
+[node name="logic2" type="Button" parent="DetailA/v" unique_id=1774247003]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 127.0
+offset_top = 141.0
+offset_right = 227.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "行动方式
+命令"
+
+[node name="logic3" type="Button" parent="DetailA/v" unique_id=209316863]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 233.0
+offset_top = 141.0
+offset_right = 333.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "战斗模式
+激进"
+
+[node name="logic4" type="Button" parent="DetailA/v" unique_id=1922624817]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 339.0
+offset_top = 141.0
+offset_right = 439.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "被操纵后
+寻敌"
+
+[node name="logic5" type="Button" parent="DetailA/v" unique_id=1217655378]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 207.0
+offset_right = 121.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "任务时机
+触发后"
+
+[node name="logic6" type="Button" parent="DetailA/v" unique_id=808483199]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 127.0
+offset_top = 207.0
+offset_right = 227.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "如何组队
+合并"
+
+[node name="logic7" type="Button" parent="DetailA/v" unique_id=2109951649]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 233.0
+offset_top = 207.0
+offset_right = 333.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "移动逻辑
+运输"
+
+[node name="logic8" type="Button" parent="DetailA/v" unique_id=1561242718]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 339.0
+offset_top = 207.0
+offset_right = 439.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "是否解散
+是"
+
+[node name="sc" type="Button" parent="DetailA/v" unique_id=25173723]
+custom_minimum_size = Vector2(126, 35)
+layout_mode = 0
+offset_left = 125.0
+offset_top = 55.0
+offset_right = 251.0
+offset_bottom = 90.0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(5.968213e-06, 0.5808568, 0.6997729, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_huopk")
+text = "- 运载攻击A1 -"
+
+[node name="tm" type="Button" parent="DetailA/v" unique_id=353570600]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 0
+offset_left = 125.0
+offset_top = 94.0
+offset_right = 251.0
+offset_bottom = 129.0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(5.968213e-06, 0.5808568, 0.6997729, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_huopk")
+text = "- 地面部队A -"
+
+[node name="yx" type="Button" parent="DetailA/v" unique_id=410316982]
+custom_minimum_size = Vector2(89.915, 74)
+layout_mode = 0
+offset_left = 255.0
+offset_top = 55.0
+offset_right = 344.915
+offset_bottom = 129.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_d4iwv")
+text = "优先级
+5级"
+
+[node name="lv" type="Button" parent="DetailA/v" unique_id=235635222]
+custom_minimum_size = Vector2(91, 74)
+layout_mode = 0
+offset_left = 348.0
+offset_top = 55.0
+offset_right = 439.0
+offset_bottom = 129.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_dewsq")
+text = "建造等级
+3"
+
+[node name="DetailB" type="Control" parent="." unique_id=587660936]
+anchors_preset = 0
+offset_left = 956.0
+offset_top = 769.0
+offset_right = 956.0
+offset_bottom = 769.0
+
+[node name="bg" type="Panel" parent="DetailB" unique_id=1861330535]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 460.0
+offset_bottom = 286.0
+theme = ExtResource("3_o3nh6")
+
+[node name="id" type="Button" parent="DetailB" unique_id=390731818]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 5.0
+offset_right = 156.0
+offset_bottom = 36.0
+theme = ExtResource("4_x1035")
+text = "Smart2-G"
+
+[node name="label2" type="Label" parent="DetailB" unique_id=1938866032]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 55.0
+offset_right = 121.0
+offset_bottom = 90.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_8kq8x")
+text = "任务命令"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="label" type="Label" parent="DetailB" unique_id=495595069]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 94.0
+offset_right = 121.0
+offset_bottom = 129.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_8kq8x")
+text = "使用部队"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="v" type="Control" parent="DetailB" unique_id=967994851]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="logic1" type="Button" parent="DetailB/v" unique_id=307862355]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 141.0
+offset_right = 121.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "需求队伍
+1只"
+
+[node name="logic2" type="Button" parent="DetailB/v" unique_id=650071046]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 127.0
+offset_top = 141.0
+offset_right = 227.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "行动方式
+自由"
+
+[node name="logic3" type="Button" parent="DetailB/v" unique_id=705844036]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 233.0
+offset_top = 141.0
+offset_right = 333.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "战斗模式
+防御"
+
+[node name="logic4" type="Button" parent="DetailB/v" unique_id=2001203472]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 0
+offset_left = 339.0
+offset_top = 141.0
+offset_right = 439.0
+offset_bottom = 201.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "被操纵后
+变卖"
+
+[node name="logic5" type="Button" parent="DetailB/v" unique_id=1891803046]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 207.0
+offset_right = 121.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "任务时机
+提前建造"
+
+[node name="logic6" type="Button" parent="DetailB/v" unique_id=600924600]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 127.0
+offset_top = 207.0
+offset_right = 227.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "如何组队
+建造"
+
+[node name="logic7" type="Button" parent="DetailB/v" unique_id=1786977302]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 233.0
+offset_top = 207.0
+offset_right = 333.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "移动逻辑
+步行"
+
+[node name="logic8" type="Button" parent="DetailB/v" unique_id=418454531]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 0
+offset_left = 339.0
+offset_top = 207.0
+offset_right = 439.0
+offset_bottom = 267.0
+size_flags_vertical = 0
+theme = ExtResource("2_qx8nn")
+text = "是否解散
+否"
+
+[node name="sc1" type="Button" parent="DetailB/v" unique_id=2115240923]
+custom_minimum_size = Vector2(126, 35)
+layout_mode = 0
+offset_left = 125.0
+offset_top = 55.0
+offset_right = 251.0
+offset_bottom = 90.0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(5.968213e-06, 0.5808568, 0.6997729, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_huopk")
+text = "- 运载攻击A2 -"
+
+[node name="sc2" type="Button" parent="DetailB/v" unique_id=1337931856]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 0
+offset_left = 125.0
+offset_top = 94.0
+offset_right = 251.0
+offset_bottom = 129.0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(5.968213e-06, 0.5808568, 0.6997729, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_huopk")
+text = "- 地面部队2 -"
+
+[node name="sc3" type="Button" parent="DetailB/v" unique_id=1575668491]
+custom_minimum_size = Vector2(89.915, 74)
+layout_mode = 0
+offset_left = 255.0
+offset_top = 55.0
+offset_right = 344.915
+offset_bottom = 129.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_d4iwv")
+text = "优先级
+5级"
+
+[node name="sc4" type="Button" parent="DetailB/v" unique_id=1673880638]
+custom_minimum_size = Vector2(91, 74)
+layout_mode = 0
+offset_left = 348.0
+offset_top = 55.0
+offset_right = 439.0
+offset_bottom = 129.0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_dewsq")
+text = "建造等级
+0"
+
+[node name="7_Section" type="Control" parent="." unique_id=1604928499]
+anchors_preset = 0
+offset_left = 64.0
+offset_top = 802.0
+offset_right = 64.0
+offset_bottom = 802.0
+
+[node name="Team_Pad" type="Polygon2D" parent="7_Section" unique_id=42648411]
+position = Vector2(-64, -802)
+color = Color(0, 0.4, 0.2666667, 1)
+polygon = PackedVector2Array(67, 786, 53, 800, 53, 1049, 62, 1058, 372, 1058, 402, 1021, 374, 994, 374, 800, 359, 786)
+
+[node name="Line" type="Polygon2D" parent="7_Section" unique_id=1144507933]
+position = Vector2(-64, -802)
+color = Color(0, 0.4, 0.2666667, 1)
+polygon = PackedVector2Array(392, 1012, 875, 1012, 887, 1010, 896, 1006, 904, 1000, 910, 993, 914, 985, 916, 978, 917, 969, 917, 597, 919, 590, 923, 584, 929, 580, 934, 577, 947, 577, 953, 571, 956, 571, 956, 593, 952, 593, 947, 587, 935, 587, 930, 590, 927, 594, 926, 597, 926, 969, 925, 978, 924, 985, 920, 994, 915, 1001, 909, 1007, 900, 1014, 892, 1018, 882, 1021, 874, 1021, 402, 1021)
+
+[node name="bg" type="Panel" parent="7_Section" unique_id=1615227555]
+layout_mode = 0
+offset_top = 30.0
+offset_right = 299.0
+offset_bottom = 244.0
+theme = ExtResource("3_o3nh6")
+
+[node name="tag" type="Label" parent="7_Section" unique_id=2015950993]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -6.0
+offset_right = 146.0
+offset_bottom = 30.0
+theme = ExtResource("2_rhuu3")
+text = "任务部队"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="title" type="Label" parent="7_Section" unique_id=1850256116]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 287.0
+offset_bottom = 68.0
+size_flags_vertical = 1
+text = " 顺序            种类               数量      操作"
+vertical_alignment = 1
+
+[node name="id" type="Button" parent="7_Section" unique_id=1729258970]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 1.0
+offset_right = 290.0
+offset_bottom = 30.0
+theme = ExtResource("4_d4iwv")
+text = "地面部队A"
+
+[node name="add" type="Button" parent="7_Section" unique_id=1910826514]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 0
+offset_left = 14.0
+offset_top = 204.0
+offset_right = 285.0
+offset_bottom = 234.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+theme = ExtResource("2_qx8nn")
+text = "+"
+
+[node name="v" type="ScrollContainer" parent="7_Section" unique_id=552973032]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 72.0
+offset_right = 285.0
+offset_bottom = 194.0
+
+[node name="list" type="VBoxContainer" parent="7_Section/v" unique_id=491561874]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="slot" type="HBoxContainer" parent="7_Section/v/list" unique_id=1066176266]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="7_Section/v/list/slot" unique_id=1289901255]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="7_Section/v/list/slot" unique_id=2089598073]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "美国大兵"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="7_Section/v/list/slot" unique_id=1582050108]
+custom_minimum_size = Vector2(60, 26)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "3个"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="7_Section/v/list/slot" unique_id=644911257]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="slot2" type="HBoxContainer" parent="7_Section/v/list" unique_id=502246254]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="7_Section/v/list/slot2" unique_id=1540845196]
+custom_minimum_size = Vector2(40, 26)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("5_hsgvb")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="7_Section/v/list/slot2" unique_id=1301830270]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "重装部队"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="7_Section/v/list/slot2" unique_id=1146724692]
+custom_minimum_size = Vector2(60, 26)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "2个"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="7_Section/v/list/slot2" unique_id=1248861623]
+custom_minimum_size = Vector2(45, 26)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c636m")
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="-----" type="Control" parent="." unique_id=1884297488]
+anchors_preset = 0
+offset_left = 892.0
+offset_top = -423.0
+offset_right = 932.0
+offset_bottom = -383.0
+
+[node name="global_1" type="Control" parent="-----" unique_id=437879997]
+light_mask = 2
+z_index = 2
+anchors_preset = 0
+offset_left = -1604.0
+offset_top = 519.0
+offset_right = -1564.0
+offset_bottom = 559.0
+
+[node name="Label2" type="Label" parent="-----/global_1" unique_id=723637967]
+light_mask = 2
+layout_mode = 0
+offset_right = 299.0
+offset_bottom = 43.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhuu3")
+text = "全局设置"
+horizontal_alignment = 1
+
+[node name="View4" type="Panel" parent="-----/global_1" unique_id=234823201]
+light_mask = 2
+layout_mode = 0
+offset_top = 35.0
+offset_right = 299.0
+offset_bottom = 535.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_x1035")
+
+[node name="HBox" type="HBoxContainer" parent="-----/global_1/View4" unique_id=688471200]
+light_mask = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.5
+offset_top = 14.0
+offset_right = -16.5
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="VBox2" type="VBoxContainer" parent="-----/global_1/View4/HBox" unique_id=436319257]
+light_mask = 2
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+
+[node name="TeamDelays" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=196423745]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AI小队间隔"
+vertical_alignment = 1
+
+[node name="AIHateDelays" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1046632716]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "选择敌人间隔"
+vertical_alignment = 1
+
+[node name="MultiplayerAICM" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=569465187]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "初始资金加成"
+vertical_alignment = 1
+
+[node name="AIVirtualPurifiers" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1575822184]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "矿石转化加成"
+vertical_alignment = 1
+
+[node name="AISlaveMinerNumber" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1752098506]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "奴隶矿场数量"
+vertical_alignment = 1
+
+[node name="AIExtraRefineries" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1679424928]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "额外矿场数量"
+vertical_alignment = 1
+
+[node name="AIDefensiveTeams" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1159639828]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "基地防御小队数量"
+vertical_alignment = 1
+
+[node name="TotalAITeamCap" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1911082863]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "小队数量"
+vertical_alignment = 1
+
+[node name="AlliedBaseDefenseCounts" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1264149529]
+light_mask = 2
+custom_minimum_size = Vector2(0, 98)
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 22
+text = "防御建筑数量"
+vertical_alignment = 1
+
+[node name="AIPickWallDefensePercent" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=1458179793]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "防御只用围墙概率"
+vertical_alignment = 1
+
+[node name="DisabledDisguiseDetectionPercent" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=366649148]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "识破幻影坦克概率"
+vertical_alignment = 1
+
+[node name="AISuperDefenseProbability" type="Label" parent="-----/global_1/View4/HBox/VBox2" unique_id=2137538169]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "使用超武护盾概率"
+vertical_alignment = 1
+
+[node name="VBox" type="VBoxContainer" parent="-----/global_1/View4/HBox" unique_id=895500716]
+light_mask = 2
+layout_mode = 2
+
+[node name="input3" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=197758575]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input13" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=1516972073]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input14" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=1748022114]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input15" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=286111316]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input16" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=1108349175]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input4" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=1620541658]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input5" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=1440057229]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input6" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=411903859]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input7" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=877632676]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input8" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=2109691489]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input9" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=2054833737]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input10" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=151795046]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input11" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=973275434]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="input12" type="LineEdit" parent="-----/global_1/View4/HBox/VBox" unique_id=164744119]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "简单/中等/困难"
+alignment = 1
+
+[node name="global_2" type="Control" parent="-----" unique_id=1645097555]
+light_mask = 2
+anchors_preset = 0
+offset_left = -1279.0
+offset_top = 521.0
+offset_right = -1239.0
+offset_bottom = 561.0
+
+[node name="Label2" type="Label" parent="-----/global_2" unique_id=1871154766]
+light_mask = 2
+layout_mode = 0
+offset_right = 299.0
+offset_bottom = 43.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhuu3")
+text = "全局设置"
+horizontal_alignment = 1
+
+[node name="View4" type="Panel" parent="-----/global_2" unique_id=693261393]
+light_mask = 2
+layout_mode = 0
+offset_top = 35.0
+offset_right = 404.0
+offset_bottom = 739.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_x1035")
+
+[node name="HBox" type="HBoxContainer" parent="-----/global_2/View4" unique_id=1291931077]
+light_mask = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.5
+offset_top = 14.0
+offset_right = -16.5
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="VBox2" type="VBoxContainer" parent="-----/global_2/View4/HBox" unique_id=1306834603]
+light_mask = 2
+custom_minimum_size = Vector2(140, 0)
+layout_mode = 2
+
+[node name="BaseBias" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1279681015]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "威胁敏感度"
+vertical_alignment = 1
+
+[node name="BaseDefenseDelay" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1739250888]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AI防御延迟"
+vertical_alignment = 1
+
+[node name="Stray" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=2082789523]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Stray"
+vertical_alignment = 1
+
+[node name="RelaxedStray" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=654107222]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "RelaxedStray"
+vertical_alignment = 1
+
+[node name="SuspendPriority" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=801768136]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "重新集结任务冷静期"
+vertical_alignment = 1
+
+[node name="GuardModeStray" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1417627898]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "GuardModeStray"
+vertical_alignment = 1
+
+[node name="AIAlternateProductionCreditCutoff" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1584946592]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AI消费-最低金钱"
+vertical_alignment = 1
+
+[node name="UseMinDefenseRule" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1892766913]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "UseMinDefenseRule"
+vertical_alignment = 1
+
+[node name="DissolveUnfilledTeamDelay" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=474507510]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "多少帧后解散不完整的队伍"
+vertical_alignment = 1
+
+[node name="AISafeDistance" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=101325328]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "敌人基地外多远为安全距离"
+vertical_alignment = 1
+
+[node name="AIMinorSuperReadyPercent" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=846409301]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AIMinorSuperReadyPercent"
+vertical_alignment = 1
+
+[node name="AIRestrictReplaceTime" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=814690331]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AIRestrictReplaceTime"
+vertical_alignment = 1
+
+[node name="ThreatPerOccupant" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1375819331]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "单个驻扎兵威胁值"
+vertical_alignment = 1
+
+[node name="ApproachTargetResetMultiplier" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=766116632]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "ApproachTargetResetMultiplier"
+vertical_alignment = 1
+
+[node name="GuardAreaTargetingDelay" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=836034937]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "区域警戒时AI寻敌延迟"
+vertical_alignment = 1
+
+[node name="NormalTargetingDelay" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=569778076]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "NormalTargetingDelay"
+vertical_alignment = 1
+
+[node name="AINavalYardAdjacency" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=729417777]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AI能建造船厂的距离"
+vertical_alignment = 1
+
+[node name="AIAutoDeployFrameDelay" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1830003834]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AI部署步兵的延迟"
+vertical_alignment = 1
+
+[node name="AISuperDefenseFrames" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1632088636]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "立场护盾调用延迟"
+vertical_alignment = 1
+
+[node name="AISuperDefenseDistance" type="Label" parent="-----/global_2/View4/HBox/VBox2" unique_id=1864267952]
+light_mask = 2
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "AI使用护盾范围"
+vertical_alignment = 1
+
+[node name="VBox" type="VBoxContainer" parent="-----/global_2/View4/HBox" unique_id=2136609139]
+light_mask = 2
+layout_mode = 2
+
+[node name="input3" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=159079120]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+text = "2"
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input13" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=930058412]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+text = ".25"
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input14" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=2142034297]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input15" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=520303482]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input16" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=2014352133]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input4" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1263636366]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input5" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1616104109]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input6" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1232883377]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input7" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=170729243]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "帧"
+alignment = 1
+
+[node name="input8" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1886470070]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "单元格(Cell)"
+alignment = 1
+
+[node name="input9" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=218457510]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input10" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=48962237]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "帧"
+alignment = 1
+
+[node name="input11" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1267954514]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input12" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1698834267]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input17" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=2003174664]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input18" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=507410356]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "数值"
+alignment = 1
+
+[node name="input19" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1209667951]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "单元格(Cell)"
+alignment = 1
+
+[node name="input20" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=363684662]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "帧"
+alignment = 1
+
+[node name="input21" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=1781886984]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "帧"
+alignment = 1
+
+[node name="input22" type="LineEdit" parent="-----/global_2/View4/HBox/VBox" unique_id=259190383]
+light_mask = 2
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsgvb")
+placeholder_text = "单元格(Cell)"
+alignment = 1
+
+[node name="Button" type="Button" parent="-----" unique_id=1146368194]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 92.0
+offset_right = 139.0
+offset_bottom = 143.0
+text = "特遣部队"
+
+[node name="Button2" type="Button" parent="-----" unique_id=1179270463]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 231.0
+offset_right = 139.0
+offset_bottom = 282.0
+text = "作战小队"
+
+[node name="Button3" type="Button" parent="-----" unique_id=564376795]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 299.0
+offset_right = 139.0
+offset_bottom = 350.0
+text = "AI触发"
+
+[node name="Button4" type="Button" parent="-----" unique_id=1615220404]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 160.0
+offset_right = 139.0
+offset_bottom = 211.0
+text = "注册ID"
+
+[node name="Label16" type="Label" parent="-----" unique_id=1708632019]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 106.0
+offset_right = 459.0
+offset_bottom = 129.0
+text = "[TaskForces] 部队名称，种类序号以及数量  + Group=-1"
+
+[node name="Label17" type="Label" parent="-----" unique_id=2050263733]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 174.0
+offset_right = 459.0
+offset_bottom = 197.0
+text = "[ScriptTypes] 注册ID (ID=动作,参数)"
+
+[node name="Label18" type="Label" parent="-----" unique_id=1743950857]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 245.0
+offset_right = 459.0
+offset_bottom = 268.0
+text = "[TeamTypes] 队伍类型  详细设置"
+
+[node name="Label19" type="Label" parent="-----" unique_id=1056830012]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 309.0
+offset_right = 459.0
+offset_bottom = 332.0
+text = "[AITriggerTypes] 注册ID=触发条件"
+
+[node name="Label" type="Label" parent="-----" unique_id=1398196006]
+layout_mode = 0
+offset_left = -296.0
+offset_top = 1670.0
+offset_right = 290.0
+offset_bottom = 2161.0
+text = "0CAD0DCC-G
+Allied Anti-Nuke 1 
+08DA125C-G
+<all>
+9
+0
+NAMISL
+0100000003000000000000000000000000000000000000000000000000000000
+70.000000
+10.000000
+70.000000
+1
+0
+1
+0
+0CB246CC-G
+0
+1
+1"
+
+[node name="Label3" type="Label" parent="-----" unique_id=1257555631]
+layout_mode = 0
+offset_left = -420.0
+offset_top = 1669.0
+offset_right = -308.0
+offset_bottom = 2160.0
+text = "注册项6
+Name
+TeamTypesA
+国家
+TechLevel
+条件
+前提
+前提条件参数
+基础权重
+权重下限
+权重上限
+是否用于遭遇战
+0
+阵营
+0
+TeamTypesB
+简单AI能否使用
+中等AI能否使用
+困难AI能否使用"
+
+[node name="Label4" type="Label" parent="-----" unique_id=361376801]
+layout_mode = 0
+offset_left = -420.0
+offset_top = 1548.0
+offset_right = -105.0
+offset_bottom = 1649.0
+text = "注册ID=名称,小队A,国家,科技等级,条件,前提
+参数,权重1,权重2,权重3
+遭遇战？ 0  阵营？ 0  小队B
+简单AI？中等AI？困难AI？"
+
+[node name="Label2" type="Label" parent="-----" unique_id=1409179899]
+layout_mode = 0
+offset_left = 641.0
+offset_top = 393.0
+offset_right = 2213.0
+offset_bottom = 1560.0
+text = "   [TeamTypes]
+　　…………
+　　39=08DA125C-G												; 注册ID
+　　…………
+
+　　[08DA125C-G]									  				;     注册ID
+　　Name=Allied Anti-Nuke Team - 1					;     名称（注释用）
+　　Script=0A6E54EC-G											;     指定注册在[ScriptTypes]里的脚本
+　　TaskForce=0617909C-G									;     指定注册在[TaskForces]里的特遣部队
+
+　　Priority=5														;     优先级  范围0~50，相同条件下越低越优先制造。写0疑似会无视Suicide=yes，建议写0以上。
+　　Max=1															;     同时最多存在的小队数量
+　　IsBaseDefense=no											;     是否守家
+
+　　Aggressive=no												;     侵略性的，电脑在防御达到一定数量之后再开始建造该小队      ;进攻性小队，写yes时出完守家部队之后才出。据说和Suicide共同起作用。(待确认)
+　　Suicide=yes													;     自毁式攻击，受到攻击不允许还击      ;是否还击，写yes则小队移动时不会攻击射程内的敌人，也不会还击，只严格执行脚本。据说和Aggressive共同起作用。(待确认)
+　　-Annoyance=no												; !   烦恼效果，作用不明      挨揍时还手【一次】然后继续执行任务，优先级低于Aggressive和Suicide，具体效果待测试。
+
+　　AvoidThreats=yes											;     规避威胁，小队成员在移动的过程中将会试图规避途中可能遭遇的敌方单位      是否会按威胁计算方法寻找最小威胁路径。
+
+　　Autocreate=yes												; !   自动建造      结合地图预置单位生效。遭遇战中，在条件满足的情况下，平均每隔AutocreateTime规定的时间，制造一队带有Autocreate的小队。
+　　-Reinforce=no													; ! x 增援部队      ;写yes会强制补充该小队中损失的成员。
+　　AreTeamMembersRecruitable=no					;     小队成员是否允许重组      ;队伍成员可否被调去更高优先级的队伍中。
+　　Recruiter=no													;     强制重组优先级较低的小队的成员，如果它们是可以重组的
+　　Prebuild=no													; !   预先建造，作用不明      可能会在不需要时提前造好该队伍。(待确认)
+
+　　MindControlDecision=0									; !   遭心控后，0=自动，1=加入控制方，2=进入回收厂，3=进入发电厂，4=搜索敌人，5=什么也不做
+
+
+　　Loadable=no													; !   可装载      运载单位写yes会计算ContentScan。      是否有运载单位。
+　　Full=no															; ! x 创建小队成员的时候，如果小队中有运载工具，其他成员是否应该位于运载工具的内部
+　　OnTransOnly=no											; !   只能运输，作用不明
+        UseTransportOrigin=no									; !   使用原始的运载工具
+　　Droppod=no													; ! x 使用空降舱进入战区
+　　TransportsReturnOnUnload=yes					;     运载工具卸载后返回基地
+
+　　Group=-1														; !   分组，等同于人类玩家按下Ctrl+数字键组建的小队      ;除非特殊需要。另：-2时会选取任何TaskForce。
+　　House=<none>												; ! x 创建小队成员时的所属作战方
+　　VeteranLevel=1												; ! x 兵种等级
+　　TechLevel=0													; ! x 科技等级，疑似无效
+　　IonImmune=no												; ! x 离子风暴免疫
+
+　　OnlyTargetHouseEnemy=no							; !   只攻击敌方单位，作用不明      ;是否只针对敌对方。
+　　-Whiner=yes													; !   哀叫效果，作用不明
+　　-LooseRecruit=no											; !   解散新兵，作用不明
+　　-GuardSlower=no											; !   降低反应速度，作用不明
+
+"
+tab_stops = PackedFloat32Array(20)
+
+[node name="Node2D" type="Node2D" parent="-----" unique_id=849661776]
+position = Vector2(-885, 1569)
+
+[node name="HBox" type="HBoxContainer" parent="-----/Node2D" unique_id=1823347638]
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 441.0
+offset_bottom = 40.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="label2" type="Label" parent="-----/Node2D/HBox" unique_id=1951418100]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "骚扰玩家"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input3" type="CheckButton" parent="-----/Node2D/HBox" unique_id=1621159883]
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+
+[node name="HBox7" type="HBoxContainer" parent="-----/Node2D" unique_id=852378872]
+offset_left = 9.0
+offset_top = 44.0
+offset_right = 441.0
+offset_bottom = 79.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="label" type="Label" parent="-----/Node2D/HBox7" unique_id=662885147]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "行动模式"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input5" type="MenuButton" parent="-----/Node2D/HBox7" unique_id=2011381773]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_ijxgm")
+text = "- 防御守家 -"
+flat = false
+item_count = 3
+popup/item_0/text = "- 防御守家 -"
+popup/item_0/id = 0
+popup/item_1/text = "- 攻击占领 -"
+popup/item_1/id = 5
+popup/item_2/text = "- 空降部队 -"
+popup/item_2/id = 2
+
+[node name="label5" type="Label" parent="-----/Node2D/HBox7" unique_id=1766130793]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "防御减缓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input7" type="CheckButton" parent="-----/Node2D/HBox7" unique_id=190996202]
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+
+[node name="HBox5" type="HBoxContainer" parent="-----/Node2D" unique_id=1722405410]
+offset_left = 9.0
+offset_top = 83.0
+offset_right = 441.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="label2" type="Label" parent="-----/Node2D/HBox5" unique_id=2087672344]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "躲避威胁"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input4" type="CheckButton" parent="-----/Node2D/HBox5" unique_id=547561827]
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+
+[node name="HSeparator" type="HSeparator" parent="-----/Node2D" unique_id=843112222]
+offset_left = 223.0
+offset_top = 122.0
+offset_right = 226.0
+offset_bottom = 126.0
+size_flags_horizontal = 0
+theme_override_constants/separation = 4
+theme_override_styles/separator = SubResource("StyleBoxEmpty_c636m")
+
+[node name="HBox9" type="HBoxContainer" parent="-----/Node2D" unique_id=1772599929]
+offset_left = 10.0
+offset_top = 130.0
+offset_right = 442.0
+offset_bottom = 165.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 3
+
+[node name="label3" type="Label" parent="-----/Node2D/HBox9" unique_id=243570178]
+custom_minimum_size = Vector2(80, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "自动建造"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input5" type="CheckButton" parent="-----/Node2D/HBox9" unique_id=1207454539]
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+
+[node name="label5" type="Label" parent="-----/Node2D/HBox9" unique_id=474307258]
+custom_minimum_size = Vector2(80, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "预先建造"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input7" type="CheckButton" parent="-----/Node2D/HBox9" unique_id=1850858336]
+custom_minimum_size = Vector2(60, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+
+[node name="label4" type="Label" parent="-----/Node2D/HBox9" unique_id=1732793643]
+custom_minimum_size = Vector2(80, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "增援部队"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input6" type="CheckButton" parent="-----/Node2D/HBox9" unique_id=1328792156]
+custom_minimum_size = Vector2(57, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+
+[node name="HBox6" type="HBoxContainer" parent="-----/Node2D" unique_id=1728267571]
+offset_left = 11.0
+offset_top = 169.0
+offset_right = 443.0
+offset_bottom = 204.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="label" type="Label" parent="-----/Node2D/HBox6" unique_id=947545341]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "装载运输"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input3" type="MenuButton" parent="-----/Node2D/HBox6" unique_id=919618942]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_ijxgm")
+text = "- 不装载 -"
+flat = false
+item_count = 4
+popup/item_0/text = "- 不装载 -"
+popup/item_0/id = 0
+popup/item_1/text = "- 可装载 -"
+popup/item_1/id = 2
+popup/item_2/text = "- 搭乘运输 -"
+popup/item_2/id = 5
+popup/item_3/text = "- 传送 -"
+popup/item_3/id = 3
+
+[node name="input2" type="CheckButton" parent="-----/Node2D/HBox6" unique_id=1995356068]
+custom_minimum_size = Vector2(184, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+text = "运输卸载后返回   "
+
+[node name="HBox2" type="HBoxContainer" parent="-----/Node2D" unique_id=494191086]
+offset_left = 9.0
+offset_top = 208.0
+offset_right = 441.0
+offset_bottom = 243.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="label" type="Label" parent="-----/Node2D/HBox2" unique_id=206481042]
+custom_minimum_size = Vector2(120, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tyk4")
+text = "重新组队选项"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="input2" type="CheckButton" parent="-----/Node2D/HBox2" unique_id=2046150540]
+custom_minimum_size = Vector2(154, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_pressed = true
+button_group = SubResource("ButtonGroup_qx8nn")
+text = "招募成员加入"
+
+[node name="input" type="CheckButton" parent="-----/Node2D/HBox2" unique_id=1621510150]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_group = SubResource("ButtonGroup_qx8nn")
+text = "去高优先队伍"
+
+[node name="HSeparator2" type="HSeparator" parent="-----/Node2D" unique_id=1823210113]
+offset_left = 223.0
+offset_top = 247.0
+offset_right = 226.0
+offset_bottom = 251.0
+size_flags_horizontal = 0
+theme_override_constants/separation = 4
+theme_override_styles/separator = SubResource("StyleBoxEmpty_c636m")
+
+[node name="HBox3" type="HBoxContainer" parent="-----/Node2D" unique_id=404704750]
+offset_left = 9.0
+offset_top = 255.0
+offset_right = 441.0
+offset_bottom = 329.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 8
+
+[node name="label" type="Label" parent="-----/Node2D/HBox3" unique_id=1712854213]
+custom_minimum_size = Vector2(120, 74)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_l4m2l")
+text = "移动任务时
+被敌人攻击"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FlowContainer" type="FlowContainer" parent="-----/Node2D/HBox3" unique_id=169607278]
+custom_minimum_size = Vector2(304, 0)
+layout_mode = 2
+
+[node name="input" type="CheckButton" parent="-----/Node2D/HBox3/FlowContainer" unique_id=1128892161]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_pressed = true
+button_group = SubResource("ButtonGroup_53cjo")
+text = "无视任何攻击"
+
+[node name="input2" type="CheckButton" parent="-----/Node2D/HBox3/FlowContainer" unique_id=319417181]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_group = SubResource("ButtonGroup_53cjo")
+text = "追击直至摧毁"
+
+[node name="input4" type="CheckButton" parent="-----/Node2D/HBox3/FlowContainer" unique_id=949302925]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_group = SubResource("ButtonGroup_53cjo")
+text = "反击一次"
+
+[node name="input3" type="CheckButton" parent="-----/Node2D/HBox3/FlowContainer" unique_id=183506122]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_group = SubResource("ButtonGroup_53cjo")
+text = "追着打到基地门口"
+
+[node name="HBox4" type="HBoxContainer" parent="-----/Node2D" unique_id=446566111]
+offset_left = 9.0
+offset_top = 333.0
+offset_right = 441.0
+offset_bottom = 407.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 8
+
+[node name="label" type="Label" parent="-----/Node2D/HBox4" unique_id=630470315]
+custom_minimum_size = Vector2(120, 74)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_l4m2l")
+text = "攻击目标时
+被攻击"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Flow" type="FlowContainer" parent="-----/Node2D/HBox4" unique_id=380785796]
+layout_mode = 2
+
+[node name="input" type="CheckButton" parent="-----/Node2D/HBox4/Flow" unique_id=454783620]
+custom_minimum_size = Vector2(304, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_pressed = true
+button_group = SubResource("ButtonGroup_c636m")
+text = "无视攻击  强制摧毁目标"
+
+[node name="input2" type="CheckButton" parent="-----/Node2D/HBox4/Flow" unique_id=233081560]
+custom_minimum_size = Vector2(304, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_53cjo")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gx4o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1gx4o")
+button_group = SubResource("ButtonGroup_c636m")
+text = "回应攻击  直至敌人摧毁或消失"
+
+[node name="Label5" type="Label" parent="-----" unique_id=1546083724]
+layout_mode = 0
+offset_left = -71.0
+offset_top = 1572.0
+offset_right = 42.0
+offset_bottom = 1647.0
+text = "当前权重 [IIIIIII]
+最低权重 [IIIIIII]
+最高权重 [IIIIIII]"

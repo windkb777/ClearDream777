@@ -1,0 +1,16 @@
+[gd_resource type="Theme" format=3 uid="uid://dt2p0b3s77yoe"]
+
+[sub_resource type="SystemFont" id="SystemFont_8h860"]
+font_names = PackedStringArray("Microsoft YaHei")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jtmey"]
+bg_color = Color(0.0627451, 0.07058824, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2l8f5"]
+bg_color = Color(0.26666668, 0, 0.8, 1)
+
+[resource]
+Button/font_sizes/font_size = 15
+Button/fonts/font = SubResource("SystemFont_8h860")
+Button/styles/normal = SubResource("StyleBoxFlat_jtmey")
+Button/styles/pressed = SubResource("StyleBoxFlat_2l8f5")

@@ -1,0 +1,2331 @@
+[gd_scene format=3 uid="uid://cyn46cvmy5mf2"]
+
+[ext_resource type="Script" uid="uid://d1ovdijtepq5d" path="res://Engine/GDsctipt/E.color_edit.gd" id="1_xm7xp"]
+[ext_resource type="Theme" uid="uid://dt2p0b3s77yoe" path="res://z.godot_setting/theme/Button_Group.tres" id="2_brm66"]
+[ext_resource type="Theme" uid="uid://bjifog6flx3bm" path="res://z.godot_setting/theme/slot.tres" id="3_higjb"]
+[ext_resource type="PackedScene" uid="uid://xkjpck05rviu" path="res://Engine/-inside-/Panel.tscn" id="4_2rawd"]
+
+[sub_resource type="SystemFont" id="SystemFont_diql7"]
+font_names = PackedStringArray("Microsoft YaHei UI")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7dm4"]
+bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_w7dm4"]
+font_names = PackedStringArray("Microsoft YaHei UI")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ryd4d"]
+bg_color = Color(5.7756904e-07, 0.8291339, 0.24250594, 1)
+border_width_bottom = 4
+border_color = Color(8.904189e-07, 0.38926697, 0.09705014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2rawd"]
+bg_color = Color(5.7756904e-07, 0.8291339, 0.24250594, 1)
+border_width_bottom = 4
+border_color = Color(8.904189e-07, 0.38926697, 0.09705014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_34ddw"]
+bg_color = Color(5.7756904e-07, 0.8291339, 0.24250594, 1)
+border_width_bottom = 4
+border_color = Color(8.904189e-07, 0.38926697, 0.09705014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11rrh"]
+bg_color = Color(5.7756904e-07, 0.8291339, 0.24250594, 1)
+border_width_bottom = 4
+border_color = Color(8.904189e-07, 0.38926697, 0.09705014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1nof6"]
+bg_color = Color(5.7756904e-07, 0.8291339, 0.24250594, 1)
+border_width_bottom = 4
+border_color = Color(8.904189e-07, 0.38926697, 0.09705014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5qqou"]
+bg_color = Color(0.694, 0.698, 0.702, 1)
+border_width_bottom = 4
+border_color = Color(0.3, 0.3, 0.3, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fohwo"]
+bg_color = Color(5.7756904e-07, 0.8291339, 0.24250594, 1)
+border_width_bottom = 4
+border_color = Color(8.904189e-07, 0.38926697, 0.09705014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2qbo"]
+bg_color = Color(5.7756904e-07, 0.8291339, 0.24250594, 1)
+border_width_bottom = 4
+border_color = Color(8.904189e-07, 0.38926697, 0.09705014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mjvl5"]
+bg_color = Color(1, 0.09411765, 0.09411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtgpi"]
+bg_color = Color(0.16078432, 0.45882353, 0.90588236, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ifme5"]
+bg_color = Color(0.5137255, 0.5137255, 0.5137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_676l4"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dvlyw"]
+bg_color = Color(1, 0.9372549, 0.3882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xteom"]
+bg_color = Color(0.03137255, 0.7647059, 0.3529412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udj4r"]
+bg_color = Color(0.5803922, 0.3647059, 0.9372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnpvf"]
+bg_color = Color(0.58431375, 0.15686275, 0.7411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lj7an"]
+bg_color = Color(0.19607843, 0.84313726, 0.9019608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dltyg"]
+bg_color = Color(0.4509804, 1, 0.90588236, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fs7p6"]
+bg_color = Color(1, 0.6039216, 0.92156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wy7j0"]
+bg_color = Color(0.7764706, 0, 0.22352941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hudl3"]
+bg_color = Color(0.99908465, 0, 0.36884975, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xmthh"]
+bg_color = Color(0.25216663, 0.89, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bino8"]
+bg_color = Color(3.128499e-07, 0.4355368, 0.2536331, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_axd35"]
+bg_color = Color(0.2904594, 0.00016942024, 0.9416851, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgmww"]
+bg_color = Color(0.11764706, 0.11764706, 0.11764706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.18, 0.18, 0.18, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_5jklm"]
+font_names = PackedStringArray("Microsoft YaHei", "Microsoft YaHei UI", "Segoe UI")
+subpixel_positioning = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3cqlt"]
+bg_color = Color(0.16, 0.16, 0.16, 1)
+border_width_left = 4
+border_color = Color(0, 0.9, 0, 1)
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17gve"]
+bg_color = Color(0.16, 0.16, 0.16, 1)
+border_width_left = 4
+border_color = Color(0, 0.4992646, 0, 1)
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_2rawd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ujpnv"]
+bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_faop3"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rpx64"]
+bg_color = Color(0.1, 0.1, 0.1, 1)
+border_width_bottom = 12
+border_color = Color(0.103743516, 0.103743546, 0.10374344, 1)
+
+[node name="Color" type="Control" unique_id=1550028109]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Color Edit" type="Window" parent="." unique_id=1615099798]
+transparent_bg = true
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(780, 620)
+borderless = true
+transparent = true
+script = ExtResource("1_xm7xp")
+
+[node name="Board" parent="Color Edit" unique_id=1530729812 node_paths=PackedStringArray("ParentNode") instance=ExtResource("4_2rawd")]
+Title = "Color Edit"
+Vers = "Direct By The Dreamer  26/1/21"
+WindowSize = Vector2(780, 620)
+ParentNode = NodePath("..")
+
+[node name="UI" type="Node2D" parent="Color Edit" unique_id=1715506387]
+
+[node name="base" type="Panel" parent="Color Edit/UI" unique_id=564082260]
+custom_minimum_size = Vector2(140, 276)
+offset_left = 25.0
+offset_top = 63.0
+offset_right = 165.0
+offset_bottom = 339.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+mouse_filter = 2
+
+[node name="Label20" type="Label" parent="Color Edit/UI/base" unique_id=981213610]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 35.0
+theme_override_fonts/font = SubResource("SystemFont_diql7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7dm4")
+text = "默认颜色"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="b1" type="ColorRect" parent="Color Edit/UI/base" unique_id=627622470]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 48.0
+offset_right = 130.0
+offset_bottom = 68.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.87058824, 0.8901961, 0.03137255, 1)
+
+[node name="b2" type="ColorRect" parent="Color Edit/UI/base" unique_id=890074206]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 76.0
+offset_right = 130.0
+offset_bottom = 96.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.09411765, 0.09411765, 1)
+
+[node name="b3" type="ColorRect" parent="Color Edit/UI/base" unique_id=1832236491]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 103.0
+offset_right = 130.0
+offset_bottom = 123.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.16078432, 0.45882353, 0.90588236, 1)
+
+[node name="b4" type="ColorRect" parent="Color Edit/UI/base" unique_id=246733246]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 131.0
+offset_right = 130.0
+offset_bottom = 151.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.22352941, 0.827451, 0.16078432, 1)
+
+[node name="b5" type="ColorRect" parent="Color Edit/UI/base" unique_id=937733067]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 159.0
+offset_right = 130.0
+offset_bottom = 179.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.63529414, 0.09411765, 1)
+
+[node name="b6" type="ColorRect" parent="Color Edit/UI/base" unique_id=2066165102]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 186.0
+offset_right = 130.0
+offset_bottom = 206.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.19215687, 0.84313726, 0.90588236, 1)
+
+[node name="b7" type="ColorRect" parent="Color Edit/UI/base" unique_id=1686574640]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 214.0
+offset_right = 130.0
+offset_bottom = 234.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.5803922, 0.15686275, 0.7411765, 1)
+
+[node name="b8" type="ColorRect" parent="Color Edit/UI/base" unique_id=1618174058]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 90.0
+offset_top = 242.0
+offset_right = 130.0
+offset_bottom = 262.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.6039216, 0.9372549, 1)
+
+[node name="Label12" type="Label" parent="Color Edit/UI/base" unique_id=1609073164]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 44.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Gold"
+vertical_alignment = 1
+
+[node name="Label13" type="Label" parent="Color Edit/UI/base" unique_id=1594954359]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 76.0
+offset_right = 69.0
+offset_bottom = 95.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "DarkRed"
+vertical_alignment = 1
+
+[node name="Label14" type="Label" parent="Color Edit/UI/base" unique_id=222074141]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 104.0
+offset_right = 73.0
+offset_bottom = 123.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "DarkBlue"
+vertical_alignment = 1
+
+[node name="Label15" type="Label" parent="Color Edit/UI/base" unique_id=536912725]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 131.0
+offset_right = 84.0
+offset_bottom = 150.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "DarkGreen"
+vertical_alignment = 1
+
+[node name="Label16" type="Label" parent="Color Edit/UI/base" unique_id=1362475410]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 159.0
+offset_right = 62.0
+offset_bottom = 178.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Orange"
+vertical_alignment = 1
+
+[node name="Label17" type="Label" parent="Color Edit/UI/base" unique_id=1064529654]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 187.0
+offset_right = 67.0
+offset_bottom = 206.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "DarkSky"
+vertical_alignment = 1
+
+[node name="Label18" type="Label" parent="Color Edit/UI/base" unique_id=624574404]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 214.0
+offset_right = 56.0
+offset_bottom = 233.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Purple"
+vertical_alignment = 1
+
+[node name="Label19" type="Label" parent="Color Edit/UI/base" unique_id=409255191]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 242.0
+offset_right = 72.0
+offset_bottom = 261.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Magenta"
+vertical_alignment = 1
+
+[node name="plus" type="Panel" parent="Color Edit/UI" unique_id=871728932]
+custom_minimum_size = Vector2(145, 373.36)
+offset_left = 185.0
+offset_top = 63.0
+offset_right = 330.0
+offset_bottom = 436.36
+size_flags_horizontal = 0
+size_flags_vertical = 2
+mouse_filter = 2
+
+[node name="title2" type="Label" parent="Color Edit/UI/plus" unique_id=1767259821]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 0
+offset_right = 145.0
+offset_bottom = 35.0
+theme_override_fonts/font = SubResource("SystemFont_diql7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7dm4")
+text = "额外颜色"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="p1" type="ColorRect" parent="Color Edit/UI/plus" unique_id=1306859446]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 47.0
+offset_right = 133.0
+offset_bottom = 67.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.89411765, 0, 1)
+
+[node name="p2" type="ColorRect" parent="Color Edit/UI/plus" unique_id=474092905]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 76.0
+offset_right = 133.0
+offset_bottom = 96.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.9411765, 0.9411765, 0.9411765, 1)
+
+[node name="p3" type="ColorRect" parent="Color Edit/UI/plus" unique_id=53003014]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 105.0
+offset_right = 133.0
+offset_bottom = 125.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.5137255, 0.5137255, 0.5137255, 1)
+
+[node name="p4" type="ColorRect" parent="Color Edit/UI/plus" unique_id=1007188077]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 135.0
+offset_right = 133.0
+offset_bottom = 155.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0, 0, 0, 1)
+
+[node name="p5" type="ColorRect" parent="Color Edit/UI/plus" unique_id=35113452]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 164.0
+offset_right = 133.0
+offset_bottom = 184.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.5882353, 0, 1)
+
+[node name="p6" type="ColorRect" parent="Color Edit/UI/plus" unique_id=133622747]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 193.0
+offset_right = 133.0
+offset_bottom = 213.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.72156864, 0.3372549, 0, 1)
+
+[node name="p7" type="ColorRect" parent="Color Edit/UI/plus" unique_id=1552518025]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 222.0
+offset_right = 133.0
+offset_bottom = 242.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.4392157, 1, 0.8901961, 1)
+
+[node name="p8" type="ColorRect" parent="Color Edit/UI/plus" unique_id=1122749489]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 252.0
+offset_right = 133.0
+offset_bottom = 272.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.039215688, 0.7647059, 0.3647059, 1)
+
+[node name="p9" type="ColorRect" parent="Color Edit/UI/plus" unique_id=424766385]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 281.0
+offset_right = 133.0
+offset_bottom = 301.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.5647059, 0.36078432, 0.93333334, 1)
+
+[node name="px" type="ColorRect" parent="Color Edit/UI/plus" unique_id=1285091900]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 310.0
+offset_right = 133.0
+offset_bottom = 330.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.44705883, 0.15686275, 0.7411765, 1)
+
+[node name="pv" type="ColorRect" parent="Color Edit/UI/plus" unique_id=1253951775]
+custom_minimum_size = Vector2(40, 20)
+layout_mode = 0
+offset_left = 93.0
+offset_top = 340.0
+offset_right = 133.0
+offset_bottom = 360.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.7176471, 0.15686275, 0.7411765, 1)
+
+[node name="Label" type="Label" parent="Color Edit/UI/plus" unique_id=1940756958]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 51.0
+offset_right = 55.0
+offset_bottom = 70.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Yellow"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Color Edit/UI/plus" unique_id=1866730482]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 80.0
+offset_right = 77.0
+offset_bottom = 99.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "LightGrey"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Color Edit/UI/plus" unique_id=1535230057]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 108.0
+offset_right = 43.0
+offset_bottom = 127.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Grey"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Color Edit/UI/plus" unique_id=2051538785]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 137.0
+offset_right = 89.0
+offset_bottom = 156.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "NeonGreen"
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Color Edit/UI/plus" unique_id=29108065]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 165.0
+offset_right = 78.0
+offset_bottom = 184.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "LightGold"
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="Color Edit/UI/plus" unique_id=1123614070]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 194.0
+offset_right = 38.0
+offset_bottom = 213.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Red"
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="Color Edit/UI/plus" unique_id=783374368]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 222.0
+offset_right = 75.0
+offset_bottom = 241.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "LightBlue"
+vertical_alignment = 1
+
+[node name="Label9" type="Label" parent="Color Edit/UI/plus" unique_id=1560824815]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 251.0
+offset_right = 53.0
+offset_bottom = 270.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Green"
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="Color Edit/UI/plus" unique_id=2076777618]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 279.0
+offset_right = 78.0
+offset_bottom = 298.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "NeonBlue"
+vertical_alignment = 1
+
+[node name="Label11" type="Label" parent="Color Edit/UI/plus" unique_id=1960730548]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 308.0
+offset_right = 64.0
+offset_bottom = 327.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Purple3"
+vertical_alignment = 1
+
+[node name="Label10" type="Label" parent="Color Edit/UI/plus" unique_id=1217326250]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 337.0
+offset_right = 64.0
+offset_bottom = 356.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.24, 0.24, 0.24, 1)
+theme_override_fonts/font = SubResource("SystemFont_w7dm4")
+theme_override_font_sizes/font_size = 14
+text = "Purple2"
+vertical_alignment = 1
+
+[node name="Ares" type="Panel" parent="Color Edit/UI" unique_id=1059586904]
+custom_minimum_size = Vector2(400, 170)
+offset_left = 354.0
+offset_top = 63.0
+offset_right = 754.0
+offset_bottom = 233.0
+size_flags_horizontal = 0
+size_flags_vertical = 2
+mouse_filter = 2
+
+[node name="Label21" type="Label" parent="Color Edit/UI/Ares" unique_id=1726551245]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 35.0
+theme_override_fonts/font = SubResource("SystemFont_diql7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7dm4")
+text = "Ares颜色拓展"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="a1" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=6467869]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 18.0
+offset_top = 72.0
+offset_right = 58.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.8666667, 0.8862745, 0.050980393, 1)
+
+[node name="a2" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=1981516203]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 64.0
+offset_top = 72.0
+offset_right = 104.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.09803922, 0.09803922, 1)
+
+[node name="a3" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=1834586040]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 110.0
+offset_top = 72.0
+offset_right = 150.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.16470589, 0.45490196, 0.8862745, 1)
+
+[node name="a4" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=1753905184]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 156.0
+offset_top = 72.0
+offset_right = 196.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.24313726, 0.81960785, 0.18039216, 1)
+
+[node name="a5" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=129665948]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 72.0
+offset_right = 242.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.627451, 0.09803922, 1)
+
+[node name="a6" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=962889177]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 248.0
+offset_top = 72.0
+offset_right = 288.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.19607843, 0.84313726, 0.9019608, 1)
+
+[node name="a7" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=149838302]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 294.0
+offset_top = 72.0
+offset_right = 334.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.58431375, 0.15686275, 0.7411765, 1)
+
+[node name="a8" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=332029694]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 340.0
+offset_top = 72.0
+offset_right = 380.0
+offset_bottom = 97.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.6039216, 0.92156863, 1)
+
+[node name="e1" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=347300993]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 18.0
+offset_top = 122.0
+offset_right = 58.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.5803922, 0.3647059, 0.9372549, 1)
+
+[node name="e2" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=309686114]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 64.0
+offset_top = 122.0
+offset_right = 104.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.4509804, 1, 0.90588236, 1)
+
+[node name="e3" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=829554822]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 110.0
+offset_top = 122.0
+offset_right = 150.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.9372549, 0.3882353, 1)
+
+[node name="e4" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=1558336879]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 156.0
+offset_top = 122.0
+offset_right = 196.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.03137255, 0.7647059, 0.3529412, 1)
+
+[node name="e5" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=22909720]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 122.0
+offset_right = 242.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.7411765, 0.33333334, 0, 1)
+
+[node name="e6" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=722836698]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 248.0
+offset_top = 122.0
+offset_right = 288.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.5019608, 0.5019608, 0.5019608, 1)
+
+[node name="e7" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=491974014]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 294.0
+offset_top = 122.0
+offset_right = 334.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+
+[node name="e8" type="ColorRect" parent="Color Edit/UI/Ares" unique_id=1397230321]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 0
+offset_left = 340.0
+offset_top = 122.0
+offset_right = 380.0
+offset_bottom = 147.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.3764706, 0.3764706, 0.3764706, 1)
+
+[node name="ares9" type="Label" parent="Color Edit/UI/Ares" unique_id=403888352]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 18.0
+offset_top = 51.0
+offset_right = 58.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares10" type="Label" parent="Color Edit/UI/Ares" unique_id=371597191]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 64.0
+offset_top = 51.0
+offset_right = 104.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares11" type="Label" parent="Color Edit/UI/Ares" unique_id=1039116024]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 110.0
+offset_top = 51.0
+offset_right = 150.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares12" type="Label" parent="Color Edit/UI/Ares" unique_id=1454178143]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 156.0
+offset_top = 51.0
+offset_right = 196.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares13" type="Label" parent="Color Edit/UI/Ares" unique_id=1801667888]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 51.0
+offset_right = 242.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares14" type="Label" parent="Color Edit/UI/Ares" unique_id=1545649875]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 248.0
+offset_top = 51.0
+offset_right = 288.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares15" type="Label" parent="Color Edit/UI/Ares" unique_id=220574572]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 294.0
+offset_top = 51.0
+offset_right = 334.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares16" type="Label" parent="Color Edit/UI/Ares" unique_id=888112676]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 340.0
+offset_top = 51.0
+offset_right = 380.0
+offset_bottom = 68.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares1" type="Label" parent="Color Edit/UI/Ares" unique_id=1262138997]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 101.0
+offset_right = 53.0
+offset_bottom = 118.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB9"
+vertical_alignment = 1
+
+[node name="ares2" type="Label" parent="Color Edit/UI/Ares" unique_id=506672010]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 64.0
+offset_top = 101.0
+offset_right = 104.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares3" type="Label" parent="Color Edit/UI/Ares" unique_id=1336796123]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 110.0
+offset_top = 101.0
+offset_right = 150.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB11"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares4" type="Label" parent="Color Edit/UI/Ares" unique_id=468383981]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 156.0
+offset_top = 101.0
+offset_right = 196.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB12"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares5" type="Label" parent="Color Edit/UI/Ares" unique_id=114763027]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 101.0
+offset_right = 242.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB13"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares6" type="Label" parent="Color Edit/UI/Ares" unique_id=167020051]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 248.0
+offset_top = 101.0
+offset_right = 288.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB14"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares7" type="Label" parent="Color Edit/UI/Ares" unique_id=35410994]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 294.0
+offset_top = 101.0
+offset_right = 334.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ares8" type="Label" parent="Color Edit/UI/Ares" unique_id=1069141456]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 0
+offset_left = 340.0
+offset_top = 101.0
+offset_right = 380.0
+offset_bottom = 118.0
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 12
+text = "EB16"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Used" type="Panel" parent="Color Edit/UI" unique_id=1815838253]
+custom_minimum_size = Vector2(400, 180)
+offset_left = 354.0
+offset_top = 257.0
+offset_right = 754.0
+offset_bottom = 437.0
+size_flags_horizontal = 0
+size_flags_vertical = 2
+mouse_filter = 2
+
+[node name="title" type="Label" parent="Color Edit/UI/Used" unique_id=1458930238]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 35.0
+theme_override_fonts/font = SubResource("SystemFont_diql7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7dm4")
+text = ":: 使用中 ::"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SelMask" type="ColorRect" parent="Color Edit/UI/Used" unique_id=688818756]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 106.0
+offset_right = 202.0
+offset_bottom = 169.0
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="1" type="Label" parent="Color Edit/UI/Used" unique_id=1123008833]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 26.0
+offset_top = 51.0
+offset_right = 66.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Label" parent="Color Edit/UI/Used" unique_id=1383932032]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 70.0
+offset_top = 51.0
+offset_right = 110.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_ryd4d")
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Label" parent="Color Edit/UI/Used" unique_id=555708263]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 114.0
+offset_top = 51.0
+offset_right = 154.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_2rawd")
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="4" type="Label" parent="Color Edit/UI/Used" unique_id=1842153565]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 158.0
+offset_top = 51.0
+offset_right = 198.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="5" type="Label" parent="Color Edit/UI/Used" unique_id=958878894]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 51.0
+offset_right = 242.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_34ddw")
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="6" type="Label" parent="Color Edit/UI/Used" unique_id=1523192605]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 246.0
+offset_top = 51.0
+offset_right = 286.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_11rrh")
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="7" type="Label" parent="Color Edit/UI/Used" unique_id=1423884413]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 290.0
+offset_top = 51.0
+offset_right = 330.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="8" type="Label" parent="Color Edit/UI/Used" unique_id=513552250]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 334.0
+offset_top = 51.0
+offset_right = 374.0
+offset_bottom = 72.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="9" type="Label" parent="Color Edit/UI/Used" unique_id=1623540382]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 26.0
+offset_top = 110.0
+offset_right = 66.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "9"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="10" type="Label" parent="Color Edit/UI/Used" unique_id=374238410]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 70.0
+offset_top = 110.0
+offset_right = 110.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="11" type="Label" parent="Color Edit/UI/Used" unique_id=134735051]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 114.0
+offset_top = 110.0
+offset_right = 154.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_1nof6")
+text = "11"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="12" type="Label" parent="Color Edit/UI/Used" unique_id=1091584103]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 158.0
+offset_top = 110.0
+offset_right = 198.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_5qqou")
+text = "12"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="13" type="Label" parent="Color Edit/UI/Used" unique_id=1735074527]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 110.0
+offset_right = 242.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "13"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="14" type="Label" parent="Color Edit/UI/Used" unique_id=137677168]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 246.0
+offset_top = 110.0
+offset_right = 286.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+text = "14"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="15" type="Label" parent="Color Edit/UI/Used" unique_id=167060329]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 290.0
+offset_top = 110.0
+offset_right = 330.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_fohwo")
+text = "15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="16" type="Label" parent="Color Edit/UI/Used" unique_id=2104649476]
+custom_minimum_size = Vector2(40, 21)
+layout_mode = 0
+offset_left = 334.0
+offset_top = 110.0
+offset_right = 374.0
+offset_bottom = 131.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_t2qbo")
+text = "16"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use1" type="Label" parent="Color Edit/UI/Used" unique_id=1816157225]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 26.0
+offset_top = 76.0
+offset_right = 66.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_mjvl5")
+text = "D"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use2" type="Label" parent="Color Edit/UI/Used" unique_id=1168318281]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 70.0
+offset_top = 76.0
+offset_right = 110.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtgpi")
+text = "D"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use3" type="Label" parent="Color Edit/UI/Used" unique_id=1369741893]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 114.0
+offset_top = 76.0
+offset_right = 154.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ifme5")
+text = "P"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use4" type="Label" parent="Color Edit/UI/Used" unique_id=1837149561]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 158.0
+offset_top = 76.0
+offset_right = 198.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_676l4")
+text = "P"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use5" type="Label" parent="Color Edit/UI/Used" unique_id=640494137]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 76.0
+offset_right = 242.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dvlyw")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use6" type="Label" parent="Color Edit/UI/Used" unique_id=1727659588]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 246.0
+offset_top = 76.0
+offset_right = 286.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xteom")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use7" type="Label" parent="Color Edit/UI/Used" unique_id=1499218849]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 290.0
+offset_top = 76.0
+offset_right = 330.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_udj4r")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use8" type="Label" parent="Color Edit/UI/Used" unique_id=807051318]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 334.0
+offset_top = 76.0
+offset_right = 374.0
+offset_bottom = 106.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bnpvf")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use9" type="Label" parent="Color Edit/UI/Used" unique_id=795870595]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 26.0
+offset_top = 135.0
+offset_right = 66.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lj7an")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use10" type="Label" parent="Color Edit/UI/Used" unique_id=174757746]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 70.0
+offset_top = 135.0
+offset_right = 110.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dltyg")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use11" type="Label" parent="Color Edit/UI/Used" unique_id=1388666554]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 114.0
+offset_top = 135.0
+offset_right = 154.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fs7p6")
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use12" type="Label" parent="Color Edit/UI/Used" unique_id=1128872094]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 158.0
+offset_top = 135.0
+offset_right = 198.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wy7j0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use13" type="Label" parent="Color Edit/UI/Used" unique_id=1690932128]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 202.0
+offset_top = 135.0
+offset_right = 242.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hudl3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use14" type="Label" parent="Color Edit/UI/Used" unique_id=1107747170]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 246.0
+offset_top = 135.0
+offset_right = 286.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xmthh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use15" type="Label" parent="Color Edit/UI/Used" unique_id=944015810]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 290.0
+offset_top = 135.0
+offset_right = 330.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bino8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use16" type="Label" parent="Color Edit/UI/Used" unique_id=1454417765]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 0
+offset_left = 334.0
+offset_top = 135.0
+offset_right = 374.0
+offset_bottom = 165.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+mouse_filter = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_axd35")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot" type="Panel" parent="Color Edit/UI" unique_id=1881557588]
+custom_minimum_size = Vector2(730, 112)
+offset_left = 25.0
+offset_top = 450.0
+offset_right = 755.0
+offset_bottom = 562.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vgmww")
+
+[node name="ColorRect" type="ColorRect" parent="Color Edit/UI/Slot" unique_id=131735212]
+custom_minimum_size = Vector2(300, 1)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 57.0
+offset_right = 709.0
+offset_bottom = 58.0
+mouse_filter = 2
+color = Color(0.18039216, 0.18039216, 0.18039216, 1)
+
+[node name="list" type="LineEdit" parent="Color Edit/UI/Slot" unique_id=909069652]
+visible = false
+custom_minimum_size = Vector2(110, 35)
+layout_mode = 0
+offset_left = 104.0
+offset_top = 14.0
+offset_right = 294.0
+offset_bottom = 49.0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_5jklm")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_3cqlt")
+placeholder_text = "Input  List: 1,2,6,8,7..."
+alignment = 1
+
+[node name="named" type="LineEdit" parent="Color Edit/UI/Slot" unique_id=394358209]
+custom_minimum_size = Vector2(110, 35)
+layout_mode = 0
+offset_left = 465.0
+offset_top = 10.0
+offset_right = 575.0
+offset_bottom = 45.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_3cqlt")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_17gve")
+text = "Slot1"
+placeholder_text = "ColorName"
+alignment = 1
+
+[node name="named2" type="LineEdit" parent="Color Edit/UI/Slot" unique_id=1297740652]
+custom_minimum_size = Vector2(110, 35)
+layout_mode = 0
+offset_left = 430.0
+offset_top = 65.0
+offset_right = 719.0
+offset_bottom = 100.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_3cqlt")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_17gve")
+placeholder_text = "List.2,3,8,6,12.."
+alignment = 1
+
+[node name="hsv1" type="LineEdit" parent="Color Edit/UI/Slot" unique_id=226034198]
+custom_minimum_size = Vector2(110, 35)
+layout_mode = 0
+offset_left = 262.0
+offset_top = 65.0
+offset_right = 384.0
+offset_bottom = 100.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_3cqlt")
+placeholder_text = "RGB:0-255"
+alignment = 1
+
+[node name="rgb" type="LineEdit" parent="Color Edit/UI/Slot" unique_id=1829148277]
+custom_minimum_size = Vector2(110, 35)
+layout_mode = 0
+offset_left = 68.0
+offset_top = 65.0
+offset_right = 193.0
+offset_bottom = 100.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_3cqlt")
+placeholder_text = "H:354 SV:255"
+alignment = 1
+
+[node name="info1" type="Label" parent="Color Edit/UI/Slot" unique_id=1043577742]
+visible = false
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_top = 11.0
+offset_right = 103.0
+offset_bottom = 51.0
+theme_override_fonts/font = SubResource("SystemFont_5jklm")
+theme_override_font_sizes/font_size = 15
+text = "   Color List："
+vertical_alignment = 1
+
+[node name="info3" type="Label" parent="Color Edit/UI/Slot" unique_id=1882173829]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 0
+offset_left = 15.0
+offset_top = 14.0
+offset_right = 78.0
+offset_bottom = 49.0
+text = "Count："
+vertical_alignment = 1
+
+[node name="info4" type="Label" parent="Color Edit/UI/Slot" unique_id=1897496082]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 0
+offset_left = 15.0
+offset_top = 65.0
+offset_right = 61.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 15
+text = "HSV：                                       RGB:                                      List:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorPicker" type="ColorPickerButton" parent="Color Edit/UI/Slot" unique_id=2069774998]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 14.0
+offset_right = 721.0
+offset_bottom = 49.0
+edit_alpha = false
+
+[node name="HSlider" type="HSlider" parent="Color Edit/UI/Slot" unique_id=1650621595]
+z_index = 5
+layout_mode = 0
+offset_left = 81.0
+offset_top = 7.0
+offset_right = 299.0
+offset_bottom = 36.0
+min_value = 8.0
+max_value = 16.0
+value = 8.0
+tick_count = 9
+ticks_on_borders = true
+
+[node name="Label" type="Label" parent="Color Edit/UI/Slot" unique_id=1475743218]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 32.0
+offset_right = 300.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(0.43134022, 0.43134025, 0.43134025, 1)
+text = "8 12 16"
+horizontal_alignment = 3
+
+[node name="Ra2" type="Button" parent="Color Edit/UI" unique_id=1562748843]
+custom_minimum_size = Vector2(67, 36)
+offset_left = 25.0
+offset_top = 352.0
+offset_right = 92.0
+offset_bottom = 388.0
+theme = ExtResource("2_brm66")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2rawd")
+text = "Ra2"
+
+[node name="Ares2" type="Button" parent="Color Edit/UI" unique_id=1510874132]
+custom_minimum_size = Vector2(67, 36)
+offset_left = 98.0
+offset_top = 352.0
+offset_right = 165.0
+offset_bottom = 388.0
+theme = ExtResource("2_brm66")
+theme_override_fonts/font = SubResource("SystemFont_5jklm")
+theme_override_font_sizes/font_size = 15
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2rawd")
+text = "Ares"
+
+[node name="DIY" type="Button" parent="Color Edit/UI" unique_id=913027985]
+custom_minimum_size = Vector2(67, 36)
+offset_left = 25.0
+offset_top = 394.0
+offset_right = 92.0
+offset_bottom = 430.0
+theme = ExtResource("2_brm66")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_2rawd")
+text = "DIY"
+
+[node name="Load" type="Button" parent="Color Edit/UI" unique_id=1458883351]
+custom_minimum_size = Vector2(67, 36)
+offset_left = 98.0
+offset_top = 394.0
+offset_right = 165.0
+offset_bottom = 430.0
+theme = ExtResource("2_brm66")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2rawd")
+text = "Load"
+
+[node name="UD" type="Label" parent="Color Edit/UI" unique_id=1379020142]
+custom_minimum_size = Vector2(100, 35)
+offset_left = 25.0
+offset_top = 570.0
+offset_right = 125.0
+offset_bottom = 605.0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_5jklm")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_ujpnv")
+text = "Use Defult"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UA" type="Label" parent="Color Edit/UI" unique_id=987551523]
+custom_minimum_size = Vector2(100, 35)
+offset_left = 137.0
+offset_top = 570.0
+offset_right = 237.0
+offset_bottom = 605.0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_5jklm")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_ujpnv")
+text = "Use Ares"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CA" type="Label" parent="Color Edit/UI" unique_id=1387731387]
+custom_minimum_size = Vector2(100, 35)
+offset_left = 249.0
+offset_top = 570.0
+offset_right = 349.0
+offset_bottom = 605.0
+mouse_filter = 1
+theme_override_fonts/font = SubResource("SystemFont_5jklm")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_ujpnv")
+text = "Clear ALL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Code" type="Node2D" parent="Color Edit" unique_id=687408336]
+visible = false
+
+[node name="Label" type="Label" parent="Color Edit/Code" unique_id=1768625135]
+custom_minimum_size = Vector2(0, 35)
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 7.0
+offset_top = 47.0
+offset_right = 420.0
+offset_bottom = 82.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_faop3")
+text = "Rulesmd.ini"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Color Edit/Code" unique_id=555932486]
+custom_minimum_size = Vector2(0, 35)
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 423.0
+offset_top = 47.0
+offset_right = 774.0
+offset_bottom = 82.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_faop3")
+text = "uimd.ini"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CodeEdit4" type="CodeEdit" parent="Color Edit/Code" unique_id=1549253223]
+z_index = 1
+offset_left = 423.0
+offset_top = 84.0
+offset_right = 775.0
+offset_bottom = 614.0
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpx64")
+text = "[Colors]
+Count=16
+;Slot1.ColorScheme=EB1
+;Slot2.ColorScheme=EB2
+;Slot3.ColorScheme=EB3
+;Slot4.ColorScheme=EB4
+;Slot5.ColorScheme=EB5
+;Slot6.ColorScheme=EB6
+;Slot7.ColorScheme=EB7
+;Slot8.ColorScheme=EB8
+
+;Slot1.DisplayColor=176,23,23,100
+;Slot2.DisplayColor=225,117,0,100
+;Slot3.DisplayColor=255,0,0,100
+;Slot4.DisplayColor=0,255,33,100
+;Slot5.DisplayColor=0,255,218,100
+;Slot6.DisplayColor=0,33,255,100
+;Slot7.DisplayColor=251,0,255,100
+;Slot8.DisplayColor=255,255,255,100
+"
+context_menu_enabled = false
+emoji_menu_enabled = false
+drag_and_drop_selection_enabled = false
+caret_multiple = false
+gutters_draw_line_numbers = true
+
+[node name="CodeEdit3" type="CodeEdit" parent="Color Edit/Code" unique_id=603022932]
+z_index = 1
+offset_left = 7.0
+offset_top = 84.0
+offset_right = 420.0
+offset_bottom = 614.0
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpx64")
+text = "[Colors]
+;EB1=255,255,150
+;EB2=25,255,176
+;EB3=255,255,255
+;EB4=100,255,255
+;EB5=130,255,255
+;EB6=160,255,255	
+;EB7=220,255,255
+;EB8=0,0,255
+
+Gold=43,239,255 ;41,240,230   	Bright Yellow;Yellow
+DarkRed=0,230,255		               	Red
+Orange=25,230,255		               	Orange
+Magenta=221,102,255	         	Pink
+Purple=201,201,189				  	Purple
+DarkBlue=153,214,212			  	Blue
+DarkSky=131,200,230				 	Periwinkle (i.e. aquaish)
+DarkGreen=81,200,210				Light green
+
+Yellow=38,159,255						Pastel yellow
+LightGrey=0,0,240		               	White
+Grey=0,0,131			                       	Grey
+NeonGreen=0,0,0						Black
+AlliedLoad=164,255,255				; 17
+SovietLoad=0,235,255					; 18
+
+[ColorAdd]
+;NameRGB	values			bit vales								color#
+None=0,0,0						;00000,000000,00000		0
+StrongRed=31,0,0			;11111,000000,00000		1
+StrongGreen=0,63,0		;00000,111111,00000		2
+StrongBlue=0,0,31			;00000,000000,11111		3
+HighRed=24,0,0				;11000,000000,00000		4
+HighGreen=0,56,0			;00000,111000,00000		5
+HighBlue=0,0,24				;00000,000000,11000		6
+BrightWhite=31,63,31		;11111,111111,11111		7
+LowWhite=7,7,7				;00111,000111,00111		8
+HighWhite=24,56,24		;11000,111000,11000		9
+MidWhite=14,28,14			;01110,011100,01110		10
+Purple=15,0,15					;01111,000000,01111		11
+HighYellow=24,56,0			 ;11000,111000,00000    	12
+TopYellow=16,32,0			;10000,100000,00000		13
+"
+context_menu_enabled = false
+emoji_menu_enabled = false
+drag_and_drop_selection_enabled = false
+caret_multiple = false
+gutters_draw_line_numbers = true
+
+[node name="Window" type="Window" parent="." unique_id=588620196]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(140, 620)
+visible = false
+borderless = true
+always_on_top = true
+force_native = true
+
+[node name="Board" parent="Window" unique_id=493275774 node_paths=PackedStringArray("ParentNode") instance=ExtResource("4_2rawd")]
+Title = "应用"
+Vers = ""
+WindowSize = Vector2(140, 620)
+ParentNode = NodePath("..")
+Info = false
+UI = false
+Code = false
+Min = false
+Close = false
+
+[node name="list" type="HBoxContainer" parent="Window" unique_id=940106636]
+offset_left = 20.0
+offset_top = 63.0
+offset_right = 120.0
+offset_bottom = 583.0
+theme_override_constants/separation = 12
+
+[node name="text" type="VBoxContainer" parent="Window/list" unique_id=1729124372]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label2" type="Label" parent="Window/list/text" unique_id=1048408907]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot1"
+
+[node name="Label3" type="Label" parent="Window/list/text" unique_id=1192326578]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot2"
+
+[node name="Label4" type="Label" parent="Window/list/text" unique_id=1929742753]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot3"
+
+[node name="Label5" type="Label" parent="Window/list/text" unique_id=1484562146]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot4"
+
+[node name="Label6" type="Label" parent="Window/list/text" unique_id=529882412]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot5"
+
+[node name="Label7" type="Label" parent="Window/list/text" unique_id=1733052936]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot6"
+
+[node name="Label8" type="Label" parent="Window/list/text" unique_id=1494760371]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot7"
+
+[node name="Label9" type="Label" parent="Window/list/text" unique_id=1259380205]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot8"
+
+[node name="Label10" type="Label" parent="Window/list/text" unique_id=1113411106]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot9"
+
+[node name="Label11" type="Label" parent="Window/list/text" unique_id=1091805335]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot10"
+
+[node name="Label12" type="Label" parent="Window/list/text" unique_id=894055826]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot11"
+
+[node name="Label13" type="Label" parent="Window/list/text" unique_id=2090762394]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot12"
+
+[node name="Label14" type="Label" parent="Window/list/text" unique_id=1521323828]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot13"
+
+[node name="Label15" type="Label" parent="Window/list/text" unique_id=622283955]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot14"
+
+[node name="Label16" type="Label" parent="Window/list/text" unique_id=534233112]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot15"
+
+[node name="Label17" type="Label" parent="Window/list/text" unique_id=1326705280]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Slot16"
+
+[node name="colors" type="VBoxContainer" parent="Window/list" unique_id=1969305280]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="b1" type="ColorRect" parent="Window/list/colors" unique_id=1851148432]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.87058824, 0.8901961, 0.03137255, 1)
+
+[node name="b2" type="ColorRect" parent="Window/list/colors" unique_id=106277587]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.09411765, 0.09411765, 1)
+
+[node name="b3" type="ColorRect" parent="Window/list/colors" unique_id=603976286]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.16078432, 0.45882353, 0.90588236, 1)
+
+[node name="b4" type="ColorRect" parent="Window/list/colors" unique_id=1094642621]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.22352941, 0.827451, 0.16078432, 1)
+
+[node name="b5" type="ColorRect" parent="Window/list/colors" unique_id=1952699870]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.63529414, 0.09411765, 1)
+
+[node name="b6" type="ColorRect" parent="Window/list/colors" unique_id=862326350]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.19215687, 0.84313726, 0.90588236, 1)
+
+[node name="b7" type="ColorRect" parent="Window/list/colors" unique_id=1770791652]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.5803922, 0.15686275, 0.7411765, 1)
+
+[node name="b8" type="ColorRect" parent="Window/list/colors" unique_id=555638956]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.6039216, 0.9372549, 1)
+
+[node name="p4" type="ColorRect" parent="Window/list/colors" unique_id=265988315]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0, 0, 0, 1)
+
+[node name="p5" type="ColorRect" parent="Window/list/colors" unique_id=595106689]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(1, 0.5882353, 0, 1)
+
+[node name="p6" type="ColorRect" parent="Window/list/colors" unique_id=1513223665]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.72156864, 0.3372549, 0, 1)
+
+[node name="p7" type="ColorRect" parent="Window/list/colors" unique_id=1049068599]
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.4392157, 1, 0.8901961, 1)
+
+[node name="a3" type="ColorRect" parent="Window/list/colors" unique_id=476353148]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.16470589, 0.45490196, 0.8862745, 1)
+
+[node name="a4" type="ColorRect" parent="Window/list/colors" unique_id=75765158]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.24313726, 0.81960785, 0.18039216, 1)
+
+[node name="a6" type="ColorRect" parent="Window/list/colors" unique_id=430931284]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.19607843, 0.84313726, 0.9019608, 1)
+
+[node name="e1" type="ColorRect" parent="Window/list/colors" unique_id=935951788]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
+custom_minimum_size = Vector2(40, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+mouse_filter = 2
+theme = ExtResource("3_higjb")
+color = Color(0.5803922, 0.3647059, 0.9372549, 1)

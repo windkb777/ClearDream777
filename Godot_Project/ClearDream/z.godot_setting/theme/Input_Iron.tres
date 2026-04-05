@@ -1,0 +1,11 @@
+[gd_resource type="Theme" format=3 uid="uid://dacsd05ihal65"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7dm4"]
+bg_color = Color(0, 0, 0, 1)
+border_width_bottom = 3
+border_color = Color(0.40392157, 0.40392157, 0.40392157, 1)
+
+[resource]
+LineEdit/colors/font_color = Color(1, 0.9254902, 0.19215687, 1)
+LineEdit/colors/font_placeholder_color = Color(0.40392157, 0.40392157, 0.40392157, 1)
+LineEdit/styles/normal = SubResource("StyleBoxFlat_w7dm4")

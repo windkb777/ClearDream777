@@ -1,0 +1,211 @@
+[gd_scene format=3 uid="uid://xkjpck05rviu"]
+
+[ext_resource type="Script" uid="uid://b5byt3yyodm8j" path="res://Engine/GDsctipt/ins.Panel.gd" id="1_fdpmk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adp5o"]
+bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nlhmg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qptx"]
+bg_color = Color(0.14117648, 0.14117648, 0.14117648, 1)
+border_color = Color(0.2, 0.2, 0.2, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlhmg"]
+bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y8xbr"]
+bg_color = Color(0.26666668, 0, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nejpg"]
+bg_color = Color(0.68158036, 0.0028547312, 0.9315977, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vn2t1"]
+bg_color = Color(0.26666668, 0, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_nlhmg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5suxf"]
+bg_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x5k2b"]
+bg_color = Color(0.26666668, 0, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_63sbe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdpmk"]
+bg_color = Color(0.26666668, 0, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="Board" type="Control" unique_id=1530729812]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_fdpmk")
+WindowSize = Vector2(800, 600)
+metadata/_edit_vertical_guides_ = [663.0]
+
+[node name="bg_line" type="Line2D" parent="." unique_id=396592778]
+z_index = 2
+points = PackedVector2Array(3, 3, 798, 3, 798, 598, 3, 598)
+closed = true
+width = 1.0
+default_color = Color(0.3, 0.3, 0.3, 1)
+
+[node name="BGTitle" type="Panel" parent="." unique_id=757730264]
+z_index = 1
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 45.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_adp5o")
+
+[node name="Title" type="Label" parent="." unique_id=336197397]
+z_index = 1
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 45.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nlhmg")
+text = "测试面板"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BG" type="Panel" parent="." unique_id=1004255544]
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 600.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2qptx")
+
+[node name="Ver" type="Label" parent="." unique_id=1484454088]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 565.0
+offset_right = 776.0
+offset_bottom = 588.0
+theme_override_colors/font_color = Color(0.26, 0.26, 0.26, 1)
+text = "Direct By The Dreamer  26/2/13"
+
+[node name="Buttons" type="HBoxContainer" parent="." unique_id=560740830]
+z_index = 1
+layout_mode = 0
+offset_left = 343.0
+offset_top = 4.0
+offset_right = 791.0
+offset_bottom = 44.0
+mouse_filter = 2
+theme_override_constants/separation = 0
+alignment = 2
+
+[node name="Info" type="Button" parent="Buttons" unique_id=651125193]
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_nlhmg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8xbr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nejpg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_vn2t1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_nlhmg")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_nlhmg")
+text = "Info"
+
+[node name="UI" type="Button" parent="Buttons" unique_id=190678149]
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_nlhmg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8xbr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nejpg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_vn2t1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_nlhmg")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_nlhmg")
+text = "UI"
+
+[node name="Code" type="Button" parent="Buttons" unique_id=546172857]
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_nlhmg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8xbr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nejpg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_vn2t1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_nlhmg")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_nlhmg")
+text = "Code"
+
+[node name="Custom1" type="Button" parent="Buttons" unique_id=652690645]
+visible = false
+z_index = 2
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_5suxf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x5k2b")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_63sbe")
+
+[node name="Custom2" type="Button" parent="Buttons" unique_id=1738219888]
+visible = false
+z_index = 2
+custom_minimum_size = Vector2(64, 35)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_5suxf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x5k2b")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_63sbe")
+
+[node name="Min" type="Button" parent="Buttons" unique_id=1174632057]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_nlhmg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8xbr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fdpmk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_vn2t1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_nlhmg")
+text = "-"
+
+[node name="Close" type="Button" parent="Buttons" unique_id=1236917463]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_nlhmg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y8xbr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fdpmk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_vn2t1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_nlhmg")
+text = "x"
+
+[connection signal="pressed" from="Buttons/Min" to="." method="MinButton"]
+[connection signal="pressed" from="Buttons/Close" to="." method="CloseButton"]
